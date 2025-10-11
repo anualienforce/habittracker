@@ -20,7 +20,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.29.3'
+          flutter-version: '3.35'
 
       # Step 3: Clean Flutter project to remove old build artifacts
       - name: Clean Flutter project
@@ -29,11 +29,6 @@ jobs:
       # Step 4: Get dependencies
       - name: Install dependencies
         run: flutter pub get
-
-      # Step 5: Set iOS deployment target to 17 for StoreKit2 compatibility
-      - name: Update iOS deployment target
-        run: |
-          sed -i '' 's/platform :ios, .*/platform :ios, "17.0"/' ios/Podfile
 
       # Step 6: Install CocoaPods
       - name: Install iOS pods
