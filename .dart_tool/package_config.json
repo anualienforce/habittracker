@@ -129,15 +129,15 @@
     },
     {
       "name": "in_app_purchase",
-      "rootUri": "file:///Users/anandprajapati/.pub-cache/hosted/pub.dev/in_app_purchase-3.2.3",
+      "rootUri": "file:///Users/anandprajapati/.pub-cache/hosted/pub.dev/in_app_purchase-3.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.2"
     },
     {
       "name": "in_app_purchase_android",
-      "rootUri": "file:///Users/anandprajapati/.pub-cache/hosted/pub.dev/in_app_purchase_android-0.4.0+5",
+      "rootUri": "file:///Users/anandprajapati/.pub-cache/hosted/pub.dev/in_app_purchase_android-0.3.6+13",
       "packageUri": "lib/",
-      "languageVersion": "3.7"
+      "languageVersion": "3.5"
     },
     {
       "name": "in_app_purchase_platform_interface",
@@ -147,9 +147,9 @@
     },
     {
       "name": "in_app_purchase_storekit",
-      "rootUri": "file:///Users/anandprajapati/.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4",
+      "rootUri": "file:///Users/anandprajapati/.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.3.22+1",
       "packageUri": "lib/",
-      "languageVersion": "3.6"
+      "languageVersion": "3.4"
     },
     {
       "name": "intl",
@@ -506,7 +506,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-10-11T14:29:45.296499Z",
+  "generated": "2025-10-11T14:34:11.660229Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/anandprajapati/Documents/FlutterDev/sdk/flutter",
