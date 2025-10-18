@@ -1,2 +1,10 @@
-#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"
+// This file is used for the debug build configuration.
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
 #include "Generated.xcconfig"
+
+// --- FIX FOR GITHUB ACTIONS BUILD ---
+// This permanently solves the "bridging headers with module interfaces" error.
+BUILD_LIBRARY_FOR_DISTRIBUTION=NO
+
+// This silences warnings about Bitcode, which is deprecated by Apple.
+ENABLE_BITCODE=NO
