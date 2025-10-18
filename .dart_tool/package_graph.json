@@ -72,7 +72,7 @@
     },
     {
       "name": "in_app_purchase",
-      "version": "3.2.3",
+      "version": "3.1.5",
       "dependencies": [
         "flutter",
         "in_app_purchase_android",
@@ -308,30 +308,11 @@
       ]
     },
     {
-      "name": "in_app_purchase_storekit",
-      "version": "0.4.6",
-      "dependencies": [
-        "collection",
-        "flutter",
-        "in_app_purchase_platform_interface",
-        "json_annotation"
-      ]
-    },
-    {
       "name": "in_app_purchase_platform_interface",
       "version": "1.4.0",
       "dependencies": [
         "flutter",
         "plugin_platform_interface"
-      ]
-    },
-    {
-      "name": "in_app_purchase_android",
-      "version": "0.4.0+6",
-      "dependencies": [
-        "collection",
-        "flutter",
-        "in_app_purchase_platform_interface"
       ]
     },
     {
@@ -633,13 +614,6 @@
       ]
     },
     {
-      "name": "json_annotation",
-      "version": "4.9.0",
-      "dependencies": [
-        "meta"
-      ]
-    },
-    {
       "name": "webview_flutter_platform_interface",
       "version": "2.14.0",
       "dependencies": [
@@ -727,6 +701,33 @@
       "dependencies": [
         "meta",
         "path"
+      ]
+    },
+    {
+      "name": "in_app_purchase_android",
+      "version": "0.2.5+4",
+      "dependencies": [
+        "collection",
+        "flutter",
+        "in_app_purchase_platform_interface",
+        "json_annotation"
+      ]
+    },
+    {
+      "name": "json_annotation",
+      "version": "4.9.0",
+      "dependencies": [
+        "meta"
+      ]
+    },
+    {
+      "name": "in_app_purchase_storekit",
+      "version": "0.3.22+1",
+      "dependencies": [
+        "collection",
+        "flutter",
+        "in_app_purchase_platform_interface",
+        "json_annotation"
       ]
     }
   ],
