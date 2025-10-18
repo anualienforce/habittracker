@@ -53,51 +53,29 @@ jobs:
           pod install --verbose
           cd ..
 
-      # 8️⃣ Search for bridging headers and Swift module maps
-      - name: Check bridging headers and Swift modules
+      # 8️⃣ Force remove all bridging headers
+      - name: Remove all Bridging Headers
         run: |
-          echo "=== Searching for Bridging Headers ==="
-          find ios -name "*Bridging-Header.h"
-          echo "=== Listing Swift modulemap files ==="
-          find ios -name "module.modulemap"
-          echo "=== Checking Build Settings for Bridging Headers ==="
-          xcodebuild -showBuildSettings | grep SWIFT_OBJC_BRIDGING_HEADER || true
+          echo "=== Removing all Bridging Headers ==="
+          find ios -name "*Bridging-Header.h" -exec rm -f {} \;
+          echo "✅ All Bridging Headers removed"
 
-      # 9️⃣ List Pod info to see installed and outdated pods
-      - name: List Pod info
+      # 9️⃣ Remove SWIFT_OBJC_BRIDGING_HEADER from Xcode project
+      - name: Remove SWIFT_OBJC_BRIDGING_HEADER build setting
         run: |
-          cd ios
-          pod list
-          pod outdated
-          cd ..
+          echo "=== Removing SWIFT_OBJC_BRIDGING_HEADER setting ==="
+          plutil -replace TARGETS.Runner.buildSettings.SWIFT_OBJC_BRIDGING_HEADER -string "" ios/Runner.xcodeproj/project.pbxproj || echo "No setting found"
+          echo "✅ SWIFT_OBJC_BRIDGING_HEADER removed"
 
-      # 🔟 Detect and optionally remove unused bridging header
-      - name: Detect and remove unused bridging header
-        run: |
-          echo "=== Checking for Runner-Bridging-Header.h ==="
-          if [ -f "ios/Runner/Runner-Bridging-Header.h" ]; then
-            echo "Found bridging header. Checking if it's referenced..."
-            USED_COUNT=$(grep -R "Runner-Bridging-Header.h" ios/Runner.xcodeproj 2>/dev/null | wc -l)
-            if [ "$USED_COUNT" -eq 0 ]; then
-              echo "⚙️ Not referenced in project. Removing bridging header..."
-              rm ios/Runner/Runner-Bridging-Header.h
-              echo "✅ Removed unused bridging header"
-            else
-              echo "ℹ️ Bridging header is still referenced ($USED_COUNT matches). Keeping it."
-            fi
-          else
-            echo "✅ No bridging header found. Skipping."
-          fi
-
-      # 1️⃣1️⃣ Build iOS app for Simulator
+      # 🔟 Build iOS app for Simulator
       - name: Build iOS Simulator app
         run: flutter build ios --simulator --no-codesign
 
-      # 1️⃣2️⃣ List build output
+      # 1️⃣1️⃣ List build output
       - name: List build artifacts
         run: ls -R build/ios/iphonesimulator
 
-      # 1️⃣3️⃣ Upload .app as artifact
+      # 1️⃣2️⃣ Upload .app as artifact
       - name: Upload .app artifact
         uses: actions/upload-artifact@v4
         with:
