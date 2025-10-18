@@ -21,7 +21,15 @@ def flutter_root
   raise "FLUTTER_ROOT not found in #{generated_xcode_build_settings_path}. Try deleting Generated.xcconfig, then run flutter pub get"
 end
 
+flutter_application_path = File.expand_path(File.join('..', '..'))
+flutter_root = `flutter --version`.include?("Flutter") ? `flutter sdk-path`.strip : nil
+
+unless flutter_root && File.exist?(File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root))
+  raise "Flutter SDK not found. Run `flutter pub get` before running `pod install`."
+end
+
 require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+
 
 flutter_ios_podfile_setup
 
