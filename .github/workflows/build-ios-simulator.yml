@@ -12,50 +12,61 @@ jobs:
     runs-on: macos-14
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout your code
       - name: Checkout repository
         uses: actions/checkout@v4
 
       # 2️⃣ Cache Flutter SDK
       - name: Cache Flutter SDK
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ runner.tool_cache }}/flutter
-          key: flutter-3.35.1
-          restore-keys: flutter-
+          key: flutter-${{ runner.os }}-stable-3.35.1-${{ runner.arch }}
+          restore-keys: |
+            flutter-${{ runner.os }}-stable-3.35.1-
 
-      # 3️⃣ Check Xcode version
-      - name: Check Xcode version
-        run: xcodebuild -version
-
-      # 4️⃣ Setup Flutter
+      # 3️⃣ Set up Flutter (will use cache if available)
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.35.1'
-          cache: true   # caches pub packages automatically
+          cache: true  # automatically caches pub packages
 
-      # 5️⃣ Clean Flutter & Pods to avoid Swift plugin issues
-      - name: Clean Flutter & Pods
+      # 4️⃣ Check Xcode version
+      - name: Check Xcode version
+        run: xcodebuild -version
+
+      # 5️⃣ Cache CocoaPods
+      - name: Cache CocoaPods
+        uses: actions/cache@v4
+        with:
+          path: ios/Pods
+          key: pods-${{ hashFiles('ios/Podfile.lock') }}
+          restore-keys: pods-
+
+      # 6️⃣ Upgrade Flutter dependencies
+      - name: Flutter pub get
+        run: flutter pub get
+
+      # 7️⃣ Clean and re-install Pods
+      - name: Clean and re-install Pods
         run: |
-          flutter clean
-          rm -rf ios/Pods
-          rm ios/Podfile.lock
-          flutter pub get
           cd ios
+          rm -rf Pods
+          rm -f Podfile.lock
           pod repo update
           pod install --verbose
           cd ..
 
-      # 6️⃣ Build iOS Simulator app
+      # 8️⃣ Build iOS app for Simulator
       - name: Build iOS Simulator app
         run: flutter build ios --simulator --no-codesign
 
-      # 7️⃣ List build output
+      # 9️⃣ List build output
       - name: List build artifacts
         run: ls -R build/ios/iphonesimulator
 
-      # 8️⃣ Upload .app artifact
+      # 🔟 Upload .app as artifact
       - name: Upload .app artifact
         uses: actions/upload-artifact@v4
         with:
