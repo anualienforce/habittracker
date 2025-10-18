@@ -74,13 +74,13 @@ class _AppInitializerState extends State<AppInitializer> {
     final themeProvider = Provider.of<ThemeProvider>(context, listen: false);
     final habitProvider = Provider.of<HabitProvider>(context, listen: false);
     final notificationService = NotificationService();
-    final purchaseService = PurchaseService();
+    //final purchaseService = PurchaseService();
 
     await Future.wait([
       themeProvider.initialize(),
       habitProvider.initialize(),
       notificationService.initialize(),
-      purchaseService.initialize(),
+      //purchaseService.initialize(),
     ]);
 
     // Check if permissions have been requested

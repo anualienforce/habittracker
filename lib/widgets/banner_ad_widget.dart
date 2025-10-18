@@ -57,9 +57,9 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   @override
   Widget build(BuildContext context) {
     // Don't show ads for premium users
-    if (PurchaseService().isPremium) {
-      return const SizedBox.shrink();
-    }
+    // if (PurchaseService().isPremium) {
+    //   return const SizedBox.shrink();
+    // }
 
     // Only show ads on Android
     if (!Platform.isAndroid) {

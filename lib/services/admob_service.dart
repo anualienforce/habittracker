@@ -18,10 +18,10 @@ class AdMobService {
   bool _isBannerAdLoaded = false;
 
   // Premium status checking
-  final PurchaseService _purchaseService = PurchaseService();
+  //final PurchaseService _purchaseService = PurchaseService();
 
   /// Check if user has premium (no ads)
-  bool get isPremium => _purchaseService.isPremium;
+ // bool get isPremium => _purchaseService.isPremium;
 
   // Initialize the Mobile Ads SDK
   static Future<void> initialize() async {
@@ -47,10 +47,10 @@ class AdMobService {
   // Load banner ad (Android only)
   BannerAd? loadBannerAd() {
     // Don't load ads for premium users
-    if (isPremium) {
-      print(' Premium user - no banner ads');
-      return null;
-    }
+    // if (isPremium) {
+    //   print(' Premium user - no banner ads');
+    //   return null;
+    // }
 
     if (!Platform.isAndroid) {
       throw UnsupportedError('Ads are only supported on Android');
@@ -86,10 +86,10 @@ class AdMobService {
   // Load interstitial ad (Android only)
   void loadInterstitialAd() {
     // Don't load ads for premium users
-    if (isPremium) {
-      print('🎉 Premium user - no interstitial ads');
-      return;
-    }
+    // if (isPremium) {
+    //   print('🎉 Premium user - no interstitial ads');
+    //   return;
+    // }
 
     if (!Platform.isAndroid) {
       print('Ads are only supported on Android');
