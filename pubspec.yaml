@@ -59,7 +59,7 @@ dependencies:
   
   # Ads and Monetization
   google_mobile_ads: ^6.0.0
-  in_app_purchase: 3.2.0
+  in_app_purchase: 3.2.3
   
   # Utilities
   uuid: ^4.4.0
