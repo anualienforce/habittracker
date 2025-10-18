@@ -9,35 +9,62 @@ on:
 jobs:
   build-ios:
     name: Build iOS App for Simulator
-    runs-on: macos-14  # Xcode 15 preinstalled
+    runs-on: macos-14
 
     steps:
+      # 1️⃣ Checkout your code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Cache Flutter SDK
+      - name: Cache Flutter SDK
+        uses: actions/cache@v3
+        with:
+          path: ${{ runner.tool_cache }}/flutter
+          key: flutter-3.35.1
+          restore-keys: flutter-
+
+      # 3️⃣ Check Xcode version
+      - name: Check Xcode version
+        run: xcodebuild -version
+
+      # 4️⃣ Setup Flutter (uses cache if available)
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.35.1' # matches iOS 15 compatible Flutter
+          flutter-version: '3.35.1'
+          cache: true   # caches pub packages automatically
 
-      - name: Upgrade dependencies
+      # 5️⃣ Cache CocoaPods
+      - name: Cache CocoaPods
+        uses: actions/cache@v3
+        with:
+          path: ios/Pods
+          key: pods-${{ hashFiles('ios/Podfile.lock') }}
+          restore-keys: pods-
+
+      # 6️⃣ Upgrade Flutter dependencies
+      - name: Flutter pub get
         run: flutter pub get
 
-
-      - name: Clean and re-install Pods
+      # 7️⃣ Clean and re-install Pods
+      - name: Pod install
         run: |
           cd ios
           pod repo update
-          pod install
+          pod install --verbose
           cd ..
 
-      - name: Build iOS app for simulator
+      # 8️⃣ Build iOS app for Simulator
+      - name: Build iOS Simulator app
         run: flutter build ios --simulator --no-codesign
 
-      - name: List build output
+      # 9️⃣ List build output
+      - name: List build artifacts
         run: ls -R build/ios/iphonesimulator
 
-      - name: Upload .app as artifact
+      # 🔟 Upload .app as artifact
+      - name: Upload .app artifact
         uses: actions/upload-artifact@v4
         with:
           name: ios-simulator-app

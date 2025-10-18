@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = Flutter;
+			productName = Flutter;
 		};
 		458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */ = {
 			isa = PBXAggregateTarget;
@@ -26,6 +27,7 @@
 				8A503143AD88DC56CE1E40F31197BED3 /* PBXTargetDependency */,
 			);
 			name = GoogleUserMessagingPlatform;
+			productName = GoogleUserMessagingPlatform;
 		};
 /* End PBXAggregateTarget section */
 
@@ -592,7 +594,7 @@
 		03C8693B4D7A53F159115E31886692E9 /* NotificationChannelModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationChannelModel.swift; path = IosAwnCore/Classes/models/NotificationChannelModel.swift; sourceTree = "<group>"; };
 		056B337FB67BA5F4ED483F532E88CA30 /* BackgroundService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundService.swift; path = IosAwnCore/Classes/services/BackgroundService.swift; sourceTree = "<group>"; };
 		0652FCE3FC19056983AABE058B3CC45B /* shared_preferences_foundation-shared_preferences_foundation_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "shared_preferences_foundation-shared_preferences_foundation_privacy"; path = shared_preferences_foundation_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		065CF7F44EC3EE55E5769EDE8E86D1E9 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleMobileAds.xcframework; path = Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		065CF7F44EC3EE55E5769EDE8E86D1E9 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
 		06FE6533F380BDD82682627436907232 /* ContactPermissionStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ContactPermissionStrategy.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/ContactPermissionStrategy.m"; sourceTree = "<group>"; };
 		071549DBDD4BFC0BD7D2715539015DC2 /* sqflite_darwin-sqflite_darwin_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "sqflite_darwin-sqflite_darwin_privacy"; path = sqflite_darwin_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A93F38342BEA83A8897412016EDE787 /* AuthenticationChallengeResponseProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponseProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/AuthenticationChallengeResponseProxyAPIDelegate.swift"; sourceTree = "<group>"; };
@@ -616,7 +618,7 @@
 		16F1D1DE2D51B9465B2221119D6E7A8E /* PermissionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionManager.swift; path = IosAwnCore/Classes/managers/PermissionManager.swift; sourceTree = "<group>"; };
 		171A7B93C4692C9CFF517290B322D96C /* sqflite_darwin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqflite_darwin-prefix.pch"; sourceTree = "<group>"; };
 		171EF090C0C7E82A1E41445BFE5A9BDA /* AwesomeContentExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomeContentExtension.swift; path = IosAwnCore/Classes/extensions/AwesomeContentExtension.swift; sourceTree = "<group>"; };
-		1745E895A301E9C5954C3098DD87FC95 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		1745E895A301E9C5954C3098DD87FC95 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		17D11EFFBB7753242CC314A349F6385D /* GADTSmallTemplateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GADTSmallTemplateView.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/GoogleAdsMobileIosNativeTemplates/GADTSmallTemplateView.m"; sourceTree = "<group>"; };
 		196551C8A6C4DA0E3D10CCED87B17F9F /* DateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = IosAwnCore/Classes/utils/DateUtils.swift; sourceTree = "<group>"; };
 		19F35539239E2D25E377027EB18E1AFC /* PermissionHandlerEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PermissionHandlerEnums.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/PermissionHandlerEnums.h"; sourceTree = "<group>"; };
@@ -636,7 +638,7 @@
 		24E7E68E6A568436762AB833C927825C /* HTTPCookieProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPCookieProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/HTTPCookieProxyAPIDelegate.swift"; sourceTree = "<group>"; };
 		2827A13AE9CF2987036B60E4E3E5C2CB /* SqfliteDarwinResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SqfliteDarwinResultSet.h; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/SqfliteDarwinResultSet.h"; sourceTree = "<group>"; };
 		28888FF79805D9692A367B301C67FFC1 /* AwesomeNotificationsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AwesomeNotificationsPlugin.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/ios/Classes/AwesomeNotificationsPlugin.h"; sourceTree = "<group>"; };
-		28998320E62AD55F4028D91BC37AEE2B /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UserMessagingPlatform.xcframework; path = Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		28998320E62AD55F4028D91BC37AEE2B /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
 		28BADC197849684F2147E8206FF3151E /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = IosAwnCore/Classes/utils/StringUtils.swift; sourceTree = "<group>"; };
 		297F7072F8D87EED6E86C8A3DE467C51 /* awesome_notifications-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "awesome_notifications-prefix.pch"; sourceTree = "<group>"; };
 		2A004FC504D3E7B609B3CF473A6DCE69 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = IosAwnCore/Classes/extensions/StringExtension.swift; sourceTree = "<group>"; };
@@ -650,7 +652,7 @@
 		2BE891D9A359C56BCA054CEFCED5FBD9 /* GADTTemplateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GADTTemplateView.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/GoogleAdsMobileIosNativeTemplates/GADTTemplateView.m"; sourceTree = "<group>"; };
 		2C2BA46DA258BFEBB3BDA371774D16CC /* PermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/PermissionStrategy.h"; sourceTree = "<group>"; };
 		2C4FDCD519EA5FDEEFBE9DB84CBBA751 /* permission_handler_apple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "permission_handler_apple-prefix.pch"; sourceTree = "<group>"; };
-		2C9D98AB36A1904531227600349C6F1E /* awesome_notifications */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = awesome_notifications; path = awesome_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9D98AB36A1904531227600349C6F1E /* awesome_notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = awesome_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB04EB554430E41E5A19EDE6D62C9F2 /* Pods-RunnerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RunnerTests-umbrella.h"; sourceTree = "<group>"; };
 		2CD17B5BF6FA912042660BBB3259D6CD /* NotificationPermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotificationPermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/NotificationPermissionStrategy.h"; sourceTree = "<group>"; };
 		2E9EB5AF582889F0CA0EC722AFD178CD /* in_app_purchase_storekit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = in_app_purchase_storekit.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/include/in_app_purchase_storekit_objc/in_app_purchase_storekit.h"; sourceTree = "<group>"; };
@@ -694,7 +696,7 @@
 		41A5487DC2DFBA346C6BCB92EB043BDE /* FLTTransactionCacheProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTTransactionCacheProtocol.m; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/Protocols/FLTTransactionCacheProtocol.m"; sourceTree = "<group>"; };
 		424BA4925729262CA635CBEAB44A67A1 /* FLTMobileAds_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTMobileAds_Internal.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTMobileAds_Internal.h"; sourceTree = "<group>"; };
 		42E194894B2893F6D1498A1806860988 /* AssistantPermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AssistantPermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/AssistantPermissionStrategy.h"; sourceTree = "<group>"; };
-		42E25991B087E7007EB6EEB1D7F92282 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Frameworks/Release/UserMessagingPlatform.xcframework/ios-arm64/UserMessagingPlatform.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		42E25991B087E7007EB6EEB1D7F92282 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "Frameworks/Release/UserMessagingPlatform.xcframework/ios-arm64/UserMessagingPlatform.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		42F1B5B2477434C7D642F67A0956CD5F /* ResourceBundle-webview_flutter_wkwebview_privacy-webview_flutter_wkwebview-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-webview_flutter_wkwebview_privacy-webview_flutter_wkwebview-Info.plist"; sourceTree = "<group>"; };
 		434265992B5D256FA3D67B13E7B743E0 /* awesome_notifications-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "awesome_notifications-umbrella.h"; sourceTree = "<group>"; };
 		43D4D9AEE09A3CA051EEA4EE5BC95BA2 /* WebpagePreferencesProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebpagePreferencesProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/WebpagePreferencesProxyAPIDelegate.swift"; sourceTree = "<group>"; };
@@ -706,12 +708,12 @@
 		46780BE1D7544DB378924C134C4E7151 /* FLTAdInstanceManager_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTAdInstanceManager_Internal.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTAdInstanceManager_Internal.h"; sourceTree = "<group>"; };
 		4683C6A6BA60720F17CAD71C28988BDC /* permission_handler_apple-permission_handler_apple_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "permission_handler_apple-permission_handler_apple_privacy"; path = permission_handler_apple_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C00BCA133F0A3A98D31A2EF6A20F7E /* NotificationAttatchment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationAttatchment.swift; path = IosAwnCore/Classes/extensions/NotificationAttatchment.swift; sourceTree = "<group>"; };
-		46D2CFB800F2FA0225AF6E61B3CC6CDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/LICENSE"; sourceTree = "<group>"; };
+		46D2CFB800F2FA0225AF6E61B3CC6CDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/LICENSE"; sourceTree = "<group>"; };
 		47227E9D13996C871FB1EBE30CF67EAD /* SwiftUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUtils.swift; path = IosAwnCore/Classes/utils/SwiftUtils.swift; sourceTree = "<group>"; };
 		47745FE2547F29EEB429937D47C7C567 /* IosAwnCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IosAwnCore; path = IosAwnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B6F516172B51A1B333EF54C6B966E8 /* WebKitLibrary.g.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebKitLibrary.g.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/WebKitLibrary.g.swift"; sourceTree = "<group>"; };
 		47E8B6072941A3FF836AC66DFA82E112 /* UserContentControllerProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserContentControllerProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/UserContentControllerProxyAPIDelegate.swift"; sourceTree = "<group>"; };
-		482067BE711CB2824570F6C1BC782463 /* google_mobile_ads.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = google_mobile_ads.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/google_mobile_ads.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		482067BE711CB2824570F6C1BC782463 /* google_mobile_ads.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = google_mobile_ads.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/google_mobile_ads.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		487E8C7EDABF5C98C920538D2975EA4F /* SqfliteDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SqfliteDatabase.h; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/SqfliteDatabase.h"; sourceTree = "<group>"; };
 		492DAB0084492BF3459FAE90DAF8317D /* FIAPReceiptManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIAPReceiptManager.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/include/in_app_purchase_storekit_objc/FIAPReceiptManager.h"; sourceTree = "<group>"; };
 		497ADE092251C1870952BE7850FFC1D4 /* ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist"; sourceTree = "<group>"; };
@@ -720,7 +722,7 @@
 		4CB131F3BC1D6D2C79680B59CF30EF6B /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
 		4D86CD803A08805193A61EA2F2FF1919 /* AssistantPermissionStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AssistantPermissionStrategy.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/AssistantPermissionStrategy.m"; sourceTree = "<group>"; };
 		4E28B187A8301743AF87899781929783 /* FLTPaymentQueueHandlerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPaymentQueueHandlerProtocol.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/include/in_app_purchase_storekit_objc/FLTPaymentQueueHandlerProtocol.h"; sourceTree = "<group>"; };
-		4E3780946CCC489A658A9E8933B53930 /* permission_handler_apple.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = permission_handler_apple.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/permission_handler_apple.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E3780946CCC489A658A9E8933B53930 /* permission_handler_apple.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = permission_handler_apple.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/permission_handler_apple.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E5E7CCBC30FD9BAF3A20B1114A3F71A /* FIATransactionCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIATransactionCache.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/FIATransactionCache.m"; sourceTree = "<group>"; };
 		4E713913D81E83A86045AE323BEF4908 /* ResourceBundle-permission_handler_apple_privacy-permission_handler_apple-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-permission_handler_apple_privacy-permission_handler_apple-Info.plist"; sourceTree = "<group>"; };
 		4EC694A3924CACF3012986029230A9FC /* BackgroundRefreshStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BackgroundRefreshStrategy.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/BackgroundRefreshStrategy.m"; sourceTree = "<group>"; };
@@ -739,22 +741,22 @@
 		58409247AD7D5F7C3BD75EEE7E07EA88 /* ProxyAPIRegistrar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProxyAPIRegistrar.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/ProxyAPIRegistrar.swift"; sourceTree = "<group>"; };
 		5874A1B9ABD7F81EA115C461D78310C5 /* TimeZoneUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZoneUtils.swift; path = IosAwnCore/Classes/utils/TimeZoneUtils.swift; sourceTree = "<group>"; };
 		595BDFB21DFF28B1B6626BD2611E7ED7 /* DartBackgroundExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DartBackgroundExecutor.swift; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/ios/Classes/lib/DartBackgroundExecutor.swift"; sourceTree = "<group>"; };
-		5982123F2C19B9B9D9505A7AF162C30D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/LICENSE"; sourceTree = "<group>"; };
+		5982123F2C19B9B9D9505A7AF162C30D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/LICENSE"; sourceTree = "<group>"; };
 		5AF5790323A7F3E33D30A40644EECF60 /* in_app_purchase_storekit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = in_app_purchase_storekit; path = in_app_purchase_storekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D52450F956916C9934543711E732605 /* AbstractModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractModel.swift; path = IosAwnCore/Classes/models/AbstractModel.swift; sourceTree = "<group>"; };
 		5D8B705EF08D0924AC1A6BFB02BE7D8F /* LocationPermissionStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LocationPermissionStrategy.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/LocationPermissionStrategy.m"; sourceTree = "<group>"; };
-		5DCC28CBD44E204BEB85F6F042A0F7D2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/darwin/shared_preferences_foundation/Sources/shared_preferences_foundation/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		5DCC28CBD44E204BEB85F6F042A0F7D2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/darwin/shared_preferences_foundation/Sources/shared_preferences_foundation/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		5EAE14E8D46DC3F34CB8FA2165C2E589 /* FLTMediationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTMediationExtras.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTMediationExtras.h"; sourceTree = "<group>"; };
 		5F5D53B13043AB6EE372952E0B217EAA /* CreatedManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreatedManager.swift; path = IosAwnCore/Classes/managers/CreatedManager.swift; sourceTree = "<group>"; };
-		600CC7ADA6122572307B25834DFD69FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/LICENSE"; sourceTree = "<group>"; };
+		600CC7ADA6122572307B25834DFD69FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/LICENSE"; sourceTree = "<group>"; };
 		60A917443C61072778A1E77D7D3F1626 /* SqfliteDarwinDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SqfliteDarwinDatabaseAdditions.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/SqfliteDarwinDatabaseAdditions.m"; sourceTree = "<group>"; };
 		612BDE8706F9FA5EF4284C33117C9650 /* AwesomeActionEventListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomeActionEventListener.swift; path = IosAwnCore/Classes/listeners/AwesomeActionEventListener.swift; sourceTree = "<group>"; };
 		62769F2451698E743BDA35F55F622A3E /* PhonePermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PhonePermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/PhonePermissionStrategy.h"; sourceTree = "<group>"; };
 		628386213F55D58CB7CFF80654D6E55B /* FIAPRequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIAPRequestHandler.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/FIAPRequestHandler.m"; sourceTree = "<group>"; };
 		63140E7ACB21B390BFC93275D35F789B /* ContactPermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ContactPermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/ContactPermissionStrategy.h"; sourceTree = "<group>"; };
-		65E5B3BBEEFF1A1C5376DDE95935637C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework/ios-arm64/GoogleMobileAds.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		65E5B3BBEEFF1A1C5376DDE95935637C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework/ios-arm64/GoogleMobileAds.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Runner"; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		67090F6387B4E5F757EDE9E33C6D6BA3 /* in_app_purchase_storekit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = in_app_purchase_storekit.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		67090F6387B4E5F757EDE9E33C6D6BA3 /* in_app_purchase_storekit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = in_app_purchase_storekit.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		67C5E2D6088908A14BAF0873F809AB74 /* ListUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListUtils.swift; path = IosAwnCore/Classes/utils/ListUtils.swift; sourceTree = "<group>"; };
 		687BF96A54BA407A5B944ED458222EDF /* GADTSmallTemplateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GADTSmallTemplateView.h; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/GoogleAdsMobileIosNativeTemplates/GADTSmallTemplateView.h"; sourceTree = "<group>"; };
 		68F00F0A73362B3F660A30C74904CEF2 /* GADTSmallTemplateView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = GADTSmallTemplateView.xib; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/GoogleAdsMobileIosNativeTemplates/GADTSmallTemplateView.xib"; sourceTree = "<group>"; };
@@ -782,7 +784,7 @@
 		76BC7D5E36F6329AB948EBCE514D9EA2 /* google_mobile_ads-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "google_mobile_ads-Info.plist"; sourceTree = "<group>"; };
 		76DE04D57A03699DCF1357639B4BF8BE /* PermissionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PermissionManager.m; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/PermissionManager.m"; sourceTree = "<group>"; };
 		772D99A305EF226FE3840ABD15C0993D /* StoragePermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StoragePermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/StoragePermissionStrategy.h"; sourceTree = "<group>"; };
-		778BEEA92B82E5356F2CF877766F7936 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		778BEEA92B82E5356F2CF877766F7936 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		780BB343820245E7721AC3F0031EAF2B /* sqflite_darwin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sqflite_darwin.debug.xcconfig; sourceTree = "<group>"; };
 		7939BA038680769C63B1C7AE4780B21B /* AwesomeNotificationsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomeNotificationsExtension.swift; path = IosAwnCore/Classes/AwesomeNotificationsExtension.swift; sourceTree = "<group>"; };
 		7966187314C75DA0A1051D0FCA04E7DE /* shared_preferences_foundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "shared_preferences_foundation-umbrella.h"; sourceTree = "<group>"; };
@@ -801,7 +803,7 @@
 		828B40DA0DDB917DA12895EB8CD6DDDB /* AwesomeServiceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomeServiceExtension.swift; path = IosAwnCore/Classes/extensions/AwesomeServiceExtension.swift; sourceTree = "<group>"; };
 		82FE1C09094AD93C3A773A3DFFC8EFAB /* FLTNativeTemplateTextStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTNativeTemplateTextStyle.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/FLTNativeTemplateTextStyle.h"; sourceTree = "<group>"; };
 		84B1EB72786A0AAA753D0053D4BCD1C4 /* SqfliteDarwinResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SqfliteDarwinResultSet.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/SqfliteDarwinResultSet.m"; sourceTree = "<group>"; };
-		856887AD996840159F6395AE48C1D5F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/LICENSE"; sourceTree = "<group>"; };
+		856887AD996840159F6395AE48C1D5F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/LICENSE"; sourceTree = "<group>"; };
 		85F65EC3CBBE8E82931E563039BDBF79 /* awesome_notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = awesome_notifications.debug.xcconfig; sourceTree = "<group>"; };
 		864D599C7D24387CB2D93C3B8542B0A6 /* FLTGoogleMobileAdsReaderWriter_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTGoogleMobileAdsReaderWriter_Internal.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTGoogleMobileAdsReaderWriter_Internal.h"; sourceTree = "<group>"; };
 		864E2978DCE584F04C98E68F21C64D2B /* GoogleUserMessagingPlatform-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleUserMessagingPlatform-xcframeworks.sh"; sourceTree = "<group>"; };
@@ -844,7 +846,7 @@
 		9BC1862482EDAE7A276B466E64F90ECB /* ChannelManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelManager.swift; path = IosAwnCore/Classes/managers/ChannelManager.swift; sourceTree = "<group>"; };
 		9C28789F8D49F615D6C3B982EC8930F1 /* SqfliteDarwinDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SqfliteDarwinDatabase.h; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/SqfliteDarwinDatabase.h"; sourceTree = "<group>"; };
 		9C9AD5008BCFA13A71FB2A9A6CBBF43C /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = IosAwnCore/Classes/utils/Log.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E2271B58444C7D751D7FF88066FFC31 /* ScriptMessageProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScriptMessageProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/ScriptMessageProxyAPIDelegate.swift"; sourceTree = "<group>"; };
 		9E73A5D05AD5B30E45A36876674AF63F /* StoreKit2Translators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreKit2Translators.swift; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit/StoreKit2/StoreKit2Translators.swift"; sourceTree = "<group>"; };
 		9F6CDFE717896028523798131DC87C3B /* sk2_pigeon.g.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = sk2_pigeon.g.swift; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit/StoreKit2/sk2_pigeon.g.swift"; sourceTree = "<group>"; };
@@ -858,12 +860,12 @@
 		A4E36AC5C53C3A844C47E7C852E21BFF /* EventManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventManager.swift; path = IosAwnCore/Classes/managers/EventManager.swift; sourceTree = "<group>"; };
 		A5404043A126EA46F43C4EF3ADE8C98A /* SwiftAwesomeNotificationsPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftAwesomeNotificationsPlugin.swift; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/ios/Classes/lib/SwiftAwesomeNotificationsPlugin.swift"; sourceTree = "<group>"; };
 		A66485755A5FD4EE8CC506AF00DB5F51 /* IntUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntUtils.swift; path = IosAwnCore/Classes/utils/IntUtils.swift; sourceTree = "<group>"; };
-		A7C3A358FA8CB7484E386A8B40859DFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/LICENSE"; sourceTree = "<group>"; };
+		A7C3A358FA8CB7484E386A8B40859DFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/LICENSE"; sourceTree = "<group>"; };
 		A7DBA81C6B3B69EF0E22D054BA8ECC04 /* Google-Mobile-Ads-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Google-Mobile-Ads-SDK-prefix.pch"; sourceTree = "<group>"; };
 		A7FE29E7DFA7F9676D8A3397CBFEBEE8 /* FlutterBitmapUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlutterBitmapUtils.swift; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/ios/Classes/lib/FlutterBitmapUtils.swift"; sourceTree = "<group>"; };
 		A82491069AFDD04A8D67C0CD9E12817D /* ResourceBundle-google_mobile_ads-google_mobile_ads-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-google_mobile_ads-google_mobile_ads-Info.plist"; sourceTree = "<group>"; };
 		A861B29D556E73AE588395281AF16D02 /* webview_flutter_wkwebview-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "webview_flutter_wkwebview-prefix.pch"; sourceTree = "<group>"; };
-		A8A1808A0E4CE96E297E0075353841BA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		A8A1808A0E4CE96E297E0075353841BA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		A8F12F96A92047E123699E94AF23C663 /* MediaLibraryPermissionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaLibraryPermissionStrategy.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/MediaLibraryPermissionStrategy.h"; sourceTree = "<group>"; };
 		A8FDBAA5DB30273D3A49EC23FF64001E /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A915A3C9D31EC898AA620739FE51B4B0 /* GetTrustResultResponseProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetTrustResultResponseProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/GetTrustResultResponseProxyAPIDelegate.swift"; sourceTree = "<group>"; };
@@ -873,7 +875,7 @@
 		ABD253342E6621A548B4F6B7C05B890A /* BooleanUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanUtils.swift; path = IosAwnCore/Classes/utils/BooleanUtils.swift; sourceTree = "<group>"; };
 		ADD4E07769DE1815A0A79CE2B04B0FD2 /* AwesomeEventListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomeEventListener.swift; path = IosAwnCore/Classes/listeners/AwesomeEventListener.swift; sourceTree = "<group>"; };
 		AF3A9DDB1004DB42E97B1FD645F4DD9F /* IosAwnCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IosAwnCore.debug.xcconfig; sourceTree = "<group>"; };
-		AFD3278E9762C4AAB7FF9DA769A00648 /* awesome_notifications.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = awesome_notifications.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/ios/awesome_notifications.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFD3278E9762C4AAB7FF9DA769A00648 /* awesome_notifications.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = awesome_notifications.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/awesome_notifications-0.10.1/ios/awesome_notifications.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFE1147E8B03387F741CA44F99A56689 /* DismissedNotificationReceiver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DismissedNotificationReceiver.swift; path = IosAwnCore/Classes/broadcasters/receivers/DismissedNotificationReceiver.swift; sourceTree = "<group>"; };
 		B0E1E90BFF98CBB604770DA7021183B5 /* permission_handler_apple-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "permission_handler_apple-dummy.m"; sourceTree = "<group>"; };
 		B110A58F82E415A5A99367F4C9E44D4B /* EventPermissionStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventPermissionStrategy.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/EventPermissionStrategy.m"; sourceTree = "<group>"; };
@@ -891,7 +893,7 @@
 		B69C2C44BDE9184F704A243B3319E0A1 /* DisplayedManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayedManager.swift; path = IosAwnCore/Classes/managers/DisplayedManager.swift; sourceTree = "<group>"; };
 		B70814427F5E303639BD1E07264BA7E2 /* SecCertificateProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecCertificateProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/SecCertificateProxyAPIDelegate.swift"; sourceTree = "<group>"; };
 		B8D2C7D385325E9E34D82245832EC4D0 /* FLTAdUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTAdUtil.m; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTAdUtil.m"; sourceTree = "<group>"; };
-		B992035FD87A1B2451C808EE13EF27BF /* sqflite_darwin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = sqflite_darwin.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B992035FD87A1B2451C808EE13EF27BF /* sqflite_darwin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = sqflite_darwin.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA07B7B4E7C790303F4D0E9BD54C333F /* FLTAd_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTAd_Internal.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTAd_Internal.h"; sourceTree = "<group>"; };
 		BBFE612E32D33451A3E163E302714CD0 /* FIAPaymentQueueHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIAPaymentQueueHandler.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/include/in_app_purchase_storekit_objc/FIAPaymentQueueHandler.h"; sourceTree = "<group>"; };
 		BC04B41559F95A2597831A1865F978DB /* awesome_notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = awesome_notifications.release.xcconfig; sourceTree = "<group>"; };
@@ -917,7 +919,7 @@
 		C7149198CFA000D281B27528D3356F2B /* DateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = IosAwnCore/Classes/extensions/DateExtension.swift; sourceTree = "<group>"; };
 		C7A1DD4B4916EC9578FABAD85632E5FC /* SqfliteImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SqfliteImport.h; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/SqfliteImport.h"; sourceTree = "<group>"; };
 		C7AD28D5FB25A8DEDF61F78996932FA6 /* permission_handler_apple */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = permission_handler_apple; path = permission_handler_apple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C849225975A7ADC1C78CA0D4B3E8F726 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/LICENSE"; sourceTree = "<group>"; };
+		C849225975A7ADC1C78CA0D4B3E8F726 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/LICENSE"; sourceTree = "<group>"; };
 		C8D3010428BBF8BB9947E1A6444F0154 /* PreferencesProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreferencesProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/PreferencesProxyAPIDelegate.swift"; sourceTree = "<group>"; };
 		C925074761635AC8419BDABF508B9522 /* FLTNativeTemplateFontStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTNativeTemplateFontStyle.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/FLTNativeTemplateFontStyle.m"; sourceTree = "<group>"; };
 		C94BBFC4A045FEB329753E8E20548B80 /* in_app_purchase_storekit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "in_app_purchase_storekit-dummy.m"; sourceTree = "<group>"; };
@@ -936,14 +938,14 @@
 		D2DA30DB81B192FF867F9C84906C2E21 /* WebViewFlutterPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewFlutterPlugin.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/WebViewFlutterPlugin.swift"; sourceTree = "<group>"; };
 		D3B67C3573A86E0B2273D1CBD6B704B5 /* FlutterAssetManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlutterAssetManager.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/FlutterAssetManager.swift"; sourceTree = "<group>"; };
 		D3D21F08719584114AB253C0E9278259 /* google_mobile_ads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = google_mobile_ads.release.xcconfig; sourceTree = "<group>"; };
-		D44F97F0FE86204AD10D2021487DE64A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		D44F97F0FE86204AD10D2021487DE64A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/sqflite_darwin/Sources/sqflite_darwin/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		D69CB80DC98734BA19398ADF79C808AC /* FIAPRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIAPRequestHandler.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/include/in_app_purchase_storekit_objc/FIAPRequestHandler.h"; sourceTree = "<group>"; };
 		D6F2DAC7AFD56EC273B870AFA986297F /* webview_flutter_wkwebview-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "webview_flutter_wkwebview-dummy.m"; sourceTree = "<group>"; };
 		D758E1F1A367368D7490181DEFA28DB7 /* AwesomeNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomeNotifications.swift; path = IosAwnCore/Classes/AwesomeNotifications.swift; sourceTree = "<group>"; };
 		D7E21866C63680463FBAB9AF894A22E7 /* CriticalAlertsPermissionStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CriticalAlertsPermissionStrategy.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/ios/Classes/strategies/CriticalAlertsPermissionStrategy.m"; sourceTree = "<group>"; };
 		D82046AAB98C5CB4DAADFE1EA7BBE529 /* FLTNativeTemplateColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTNativeTemplateColor.m; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/FLTNativeTemplateColor.m"; sourceTree = "<group>"; };
-		D82AF95F932F7F70CF2F7FBA8F8C2536 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = "../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/README.md"; sourceTree = "<group>"; };
-		D85E4A07DCA06BC4095BD75EA193CA9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/LICENSE"; sourceTree = "<group>"; };
+		D82AF95F932F7F70CF2F7FBA8F8C2536 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../../../../.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.2/darwin/README.md"; sourceTree = "<group>"; };
+		D85E4A07DCA06BC4095BD75EA193CA9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = "../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/LICENSE"; sourceTree = "<group>"; };
 		D8C2029B87EE70B9654A71286FD50398 /* shared_preferences_foundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "shared_preferences_foundation-Info.plist"; sourceTree = "<group>"; };
 		D8D2E20D4DEC5EB8E050FB50E26AA2EB /* FLTNativeTemplateType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTNativeTemplateType.h; path = "../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/FLTNativeTemplateType.h"; sourceTree = "<group>"; };
 		DA190CD96E9F207A83BA9E2716566CC6 /* ResourceBundle-in_app_purchase_storekit_privacy-in_app_purchase_storekit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-in_app_purchase_storekit_privacy-in_app_purchase_storekit-Info.plist"; sourceTree = "<group>"; };
@@ -958,7 +960,7 @@
 		DFD7621D164206016ECAA021EC1E25E3 /* SecTrustProxyAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecTrustProxyAPIDelegate.swift; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/SecTrustProxyAPIDelegate.swift"; sourceTree = "<group>"; };
 		E156AE7D3F0A729AF0B9808A4C089685 /* awesome_notifications-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "awesome_notifications-dummy.m"; sourceTree = "<group>"; };
 		E17AA26A3E9940C4A7AB76FF76254786 /* NotificationIntervalModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationIntervalModel.swift; path = IosAwnCore/Classes/models/NotificationIntervalModel.swift; sourceTree = "<group>"; };
-		E20887817A8842E49D574615B52F91CA /* shared_preferences_foundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = shared_preferences_foundation.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/darwin/shared_preferences_foundation.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E20887817A8842E49D574615B52F91CA /* shared_preferences_foundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = shared_preferences_foundation.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/darwin/shared_preferences_foundation.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E333B6A067849504EF02044E74B7A8D1 /* ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist"; sourceTree = "<group>"; };
 		E47025D31940F5F8B7DEC47AECB4598E /* FLTGoogleMobileAdsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTGoogleMobileAdsPlugin.h; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTGoogleMobileAdsPlugin.h"; sourceTree = "<group>"; };
 		E49FB3A00E0B063CF3B3DD022F0123E8 /* DefaultRingtoneType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultRingtoneType.swift; path = IosAwnCore/Classes/enumerators/DefaultRingtoneType.swift; sourceTree = "<group>"; };
@@ -989,14 +991,14 @@
 		F4284099764CBC5EE08E8A6686702940 /* awesome_notifications-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "awesome_notifications-Info.plist"; sourceTree = "<group>"; };
 		F439FA469FBDAF566D8CE4B2F4C33C7A /* BroadcastSender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BroadcastSender.swift; path = IosAwnCore/Classes/broadcasters/senders/BroadcastSender.swift; sourceTree = "<group>"; };
 		F5678EC2AB9CDEC2DCEBEE3BE6B3BE8F /* in_app_purchase_storekit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = in_app_purchase_storekit.modulemap; sourceTree = "<group>"; };
-		F689032FA1F008BB8D27FDF56D4CC2FE /* webview_flutter_wkwebview.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = webview_flutter_wkwebview.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F689032FA1F008BB8D27FDF56D4CC2FE /* webview_flutter_wkwebview.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = webview_flutter_wkwebview.podspec; path = "../../../../../../../../.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.0/darwin/webview_flutter_wkwebview.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F75D8CAA9FA333A70865B295BE9AEDCA /* GADTMediumTemplateView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = GADTMediumTemplateView.xib; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/NativeTemplates/GoogleAdsMobileIosNativeTemplates/GADTMediumTemplateView.xib"; sourceTree = "<group>"; };
 		F8547457089967DAC30C3130D4EDF7D1 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		F8ECCB3B4E33C0FDD00B394CC2C7EA2E /* Google-Mobile-Ads-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Google-Mobile-Ads-SDK"; path = Google_Mobile_Ads_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AD7AA2E39EC19700863A53B14CFBC3 /* sqflite_darwin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = sqflite_darwin.modulemap; sourceTree = "<group>"; };
 		FADFE9D1A3BD696DAF9AAE2B6E252C0F /* NotificationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationModel.swift; path = IosAwnCore/Classes/models/NotificationModel.swift; sourceTree = "<group>"; };
 		FB4FD6379A78F46881B64197438CC6F3 /* webview_flutter_wkwebview-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "webview_flutter_wkwebview-Info.plist"; sourceTree = "<group>"; };
-		FB705E6D040AC5AA938CF9AAFCCEFA2B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		FB705E6D040AC5AA938CF9AAFCCEFA2B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		FC3C7CD76E3BD5802E45D4E19E966896 /* FLTAdInstanceManager_Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTAdInstanceManager_Internal.m; path = "../../../../../../../../../.pub-cache/hosted/pub.dev/google_mobile_ads-6.0.0/ios/Classes/FLTAdInstanceManager_Internal.m"; sourceTree = "<group>"; };
 		FC76E74AD62EF709B0A7DF53BEB7CE83 /* NotificationScheduleModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationScheduleModel.swift; path = IosAwnCore/Classes/models/NotificationScheduleModel.swift; sourceTree = "<group>"; };
 		FCAF5259845A997D827EA223B78FE99F /* FIAPReceiptManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIAPReceiptManager.m; path = "../../../../../../../../../../../.pub-cache/hosted/pub.dev/in_app_purchase_storekit-0.4.4/darwin/in_app_purchase_storekit/Sources/in_app_purchase_storekit_objc/FIAPReceiptManager.m"; sourceTree = "<group>"; };
@@ -1163,7 +1165,6 @@
 			children = (
 				B80E5002A479FCF967903BCF264ED6B1 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1189,7 +1190,6 @@
 				73A44EF6FA4CC4449EF21BECFF9F3A16 /* messages.g.swift */,
 				EBE74EFD35E23FBA78E83634B29FE3D5 /* SharedPreferencesPlugin.swift */,
 			);
-			name = shared_preferences_foundation;
 			path = shared_preferences_foundation;
 			sourceTree = "<group>";
 		};
@@ -1199,7 +1199,6 @@
 				160531BF8F0A221107F2955611682FA6 /* .. */,
 				C6274FDC49550BB8D7741B6057BBD9B6 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1208,7 +1207,6 @@
 			children = (
 				1CF3B69B4D2D2011BF5037BA1505D06E /* webview_flutter_wkwebview */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -1217,7 +1215,6 @@
 			children = (
 				64A2E08A7C0038649362AED5C053B2D4 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1226,7 +1223,6 @@
 			children = (
 				B83CE1F012304EAE06B36828D84B781D /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1235,7 +1231,6 @@
 			children = (
 				939C04ECEE3977D47AFBD25B4F175E7F /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1244,7 +1239,6 @@
 			children = (
 				BCC8B05DE46888984BEDF4E4311272E4 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1277,7 +1271,6 @@
 			children = (
 				1D467F900666261ACF0E90F728FEB248 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1295,7 +1288,6 @@
 			children = (
 				B146256239B8DE4B92E1A25E39CB6194 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1312,7 +1304,6 @@
 			children = (
 				EC1E74B03DD4F07F78399CA45DBDEBFA /* in_app_purchase_storekit */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -1321,7 +1312,6 @@
 			children = (
 				F18EB2831D09BBD904B42050DD004090 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1348,7 +1338,6 @@
 			children = (
 				340483708A10E51364A5A9A040A5EED8 /* sqflite_darwin */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -1360,7 +1349,6 @@
 				134936FE72D6D48AA0C70186A5694D5B /* Resources */,
 				A468838DB47B12C04681C0A4F0364C8D /* Support Files */,
 			);
-			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
@@ -1385,7 +1373,6 @@
 			children = (
 				9C666A1CEACFA59A8B00E2D5F614115A /* in_app_purchase_storekit */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -1394,7 +1381,6 @@
 			children = (
 				E8FF6AE15A88B874B6BFAF2E029E6B40 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1403,7 +1389,6 @@
 			children = (
 				69F8AAF5D4D181850AE6CC063240581B /* Sources */,
 			);
-			name = webview_flutter_wkwebview;
 			path = webview_flutter_wkwebview;
 			sourceTree = "<group>";
 		};
@@ -1412,7 +1397,6 @@
 			children = (
 				268AE485A20DEA208759B9E0EAAD6713 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1421,7 +1405,6 @@
 			children = (
 				705DE359382B1F57A5343C0F1CB73C30 /* Classes */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1430,7 +1413,6 @@
 			children = (
 				78800391BB0E2FDD17D3FE202A781686 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1465,7 +1447,6 @@
 			children = (
 				DC0AA10404C9E56D2044CFDD3A4014A6 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1474,7 +1455,6 @@
 			children = (
 				26FCAEF86882807D3EDB41CC851D0EC4 /* Resources */,
 			);
-			name = webview_flutter_wkwebview;
 			path = webview_flutter_wkwebview;
 			sourceTree = "<group>";
 		};
@@ -1483,7 +1463,6 @@
 			children = (
 				1C9B15EB7AD7DF54D3E2862B0ED49809 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1492,7 +1471,6 @@
 			children = (
 				A8A1808A0E4CE96E297E0075353841BA /* PrivacyInfo.xcprivacy */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -1501,7 +1479,6 @@
 			children = (
 				D930D0E861305A76E8B48389D07BD2EC /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -1510,7 +1487,6 @@
 			children = (
 				3FA6E24D1BED451A2CB91C4F41912C6A /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -1519,7 +1495,6 @@
 			children = (
 				1F163EDF9672EF35C22E868959B9F46D /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -1528,7 +1503,6 @@
 			children = (
 				03AFF55B49747763876F1CE76AEEAEDD /* shared_preferences_foundation */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -1537,7 +1511,6 @@
 			children = (
 				C9869BA5A28CA7C5B538738164EE90F2 /* darwin */,
 			);
-			name = in_app_purchase_storekit;
 			path = in_app_purchase_storekit;
 			sourceTree = "<group>";
 		};
@@ -1546,7 +1519,6 @@
 			children = (
 				D11D9E45354E2348CCB8A3C2BCCB21F8 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1567,7 +1539,6 @@
 				DBDC72E1133B1FB1CF650308E17E1F68 /* Resources */,
 				F3BAD2E3E1B928A6F9F48C392D271644 /* Support Files */,
 			);
-			name = GoogleUserMessagingPlatform;
 			path = GoogleUserMessagingPlatform;
 			sourceTree = "<group>";
 		};
@@ -1576,7 +1547,6 @@
 			children = (
 				0403BC8D0CC797A168ABCF75A7702C6A /* darwin */,
 			);
-			name = webview_flutter_wkwebview;
 			path = webview_flutter_wkwebview;
 			sourceTree = "<group>";
 		};
@@ -1607,7 +1577,6 @@
 				485DD63E33231FB7BBAA60C782BCD9AF /* NativeTemplates */,
 				5AEA86E1F9D427B03C99A979298694C9 /* UserMessagingPlatform */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1617,7 +1586,6 @@
 				73CBF6282C4D39577749B82D9EC62CD1 /* SqfliteImportPublic.h */,
 				3FE756521BC2F5B7964FCBBDB67EBBF9 /* SqflitePluginPublic.h */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -1626,7 +1594,6 @@
 			children = (
 				43D46C2BC4263712E6EBD033C7520D26 /* darwin */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -1654,7 +1621,6 @@
 				892138C32AFB33CFCED6A70BD1AC84CA /* SqflitePlugin.m */,
 				57EF9D1656CE3F7FE3C6F27FB465727E /* include */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -1663,7 +1629,6 @@
 			children = (
 				EA6D1E714067982207675EAF85B22688 /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -1672,7 +1637,6 @@
 			children = (
 				6D6006B5AAAFB453404F911176B64116 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -1690,7 +1654,6 @@
 			children = (
 				88426F7839BB7E360CBB95AAACFE64B7 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1699,7 +1662,6 @@
 			children = (
 				7C6B04E5E15665F1AC283AE226131FE1 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1708,7 +1670,6 @@
 			children = (
 				41019E670EA5219263B902EF8B400B8E /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1717,7 +1678,6 @@
 			children = (
 				27D71A287A1441B14A6B737E608863FF /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -1726,7 +1686,6 @@
 			children = (
 				3DEA460689F60F85F91C560CD49883B7 /* sqflite_darwin */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -1735,7 +1694,6 @@
 			children = (
 				EF412F61201116E2BC4B2F55BA0773F9 /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -1744,7 +1702,6 @@
 			children = (
 				7C356EF9F97535EBA3C0D1EA4DDEB182 /* darwin */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -1756,7 +1713,6 @@
 				3C6FD3625981319381933E341D75DEE2 /* FLTRequestHandlerProtocol.m */,
 				41A5487DC2DFBA346C6BCB92EB043BDE /* FLTTransactionCacheProtocol.m */,
 			);
-			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -1765,7 +1721,6 @@
 			children = (
 				94FAA56FB2A78381DE294FC421D75899 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1774,7 +1729,6 @@
 			children = (
 				FA37E7944FFCC80F8B659FE9421E575B /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1783,7 +1737,6 @@
 			children = (
 				6D87130C8046C5BEAB3FA0060BAB4992 /* sqflite_darwin */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -1793,7 +1746,6 @@
 				90DC1ECB6C25AE19E596B1D40B74121E /* Classes */,
 				E5A9B8303C5612531D233D9CB6BB5E75 /* Resources */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1802,7 +1754,6 @@
 			children = (
 				D9F26A38CFB36215346E9D77746AF349 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1821,7 +1772,6 @@
 				B2341C7E21AA7E9895DDCD5D8AC9374A /* FLTNativeTemplateType.m */,
 				C09E6BDA8395D1F561E9433D0E2D2A0E /* GoogleAdsMobileIosNativeTemplates */,
 			);
-			name = NativeTemplates;
 			path = NativeTemplates;
 			sourceTree = "<group>";
 		};
@@ -1839,7 +1789,6 @@
 			children = (
 				3CB1774CEE9940454C46B64687AA8A2E /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -1848,7 +1797,6 @@
 			children = (
 				E6F1F1EB79FE8F476A4B90355BF66A9F /* in_app_purchase_storekit */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -1857,7 +1805,6 @@
 			children = (
 				D984E9FCD7D28E04DC6DDA4A1B4A0DF6 /* ios */,
 			);
-			name = awesome_notifications;
 			path = awesome_notifications;
 			sourceTree = "<group>";
 		};
@@ -1866,7 +1813,6 @@
 			children = (
 				5C4380A76E63AB5D6785B420A5E859CB /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1884,7 +1830,6 @@
 			children = (
 				526C18CE2E8F70CD3F8B96F2CEB9E8B3 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -1909,7 +1854,6 @@
 			children = (
 				BBC5C00A5509B02847CE7CE5AC6EB806 /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -1918,7 +1862,6 @@
 			children = (
 				85E81A74BBA0416E472A293BF0A0E9F3 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1927,7 +1870,6 @@
 			children = (
 				3D0E84ADEC24624ABD00C7414511831E /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -1936,7 +1878,6 @@
 			children = (
 				3339685908C4CD07F748885E825061D9 /* sqflite_darwin */,
 			);
-			name = include;
 			path = include;
 			sourceTree = "<group>";
 		};
@@ -1965,7 +1906,6 @@
 				9070D0BDED1DEA25F255CC8BCA5FF075 /* .. */,
 				71B37AF960D39651727CF95F40B0E7E4 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1986,7 +1926,6 @@
 				81D8464705EF2D600F82D7F869270A0F /* FLTUserMessagingPlatformReaderWriter.h */,
 				02383BE7AB68C30BC5BE5DDCA10E8770 /* FLTUserMessagingPlatformReaderWriter.m */,
 			);
-			name = UserMessagingPlatform;
 			path = UserMessagingPlatform;
 			sourceTree = "<group>";
 		};
@@ -1995,7 +1934,6 @@
 			children = (
 				197AC524CD1A60EF4241224823D6542A /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -2004,7 +1942,6 @@
 			children = (
 				F66AED0CC0B2D3C1AF1737106FF7C132 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -2013,7 +1950,6 @@
 			children = (
 				D5A3399B14C14BE9A14B6D08EDB71478 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2022,7 +1958,6 @@
 			children = (
 				2931082027A356934E344C8DCA2654B6 /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2031,7 +1966,6 @@
 			children = (
 				7144190367FCB561E71582626077C0BA /* webview_flutter_wkwebview */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -2040,14 +1974,13 @@
 			children = (
 				5DCC28CBD44E204BEB85F6F042A0F7D2 /* PrivacyInfo.xcprivacy */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
 		623F746FEB7F2F9C2C25E779AFA02BA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C9D98AB36A1904531227600349C6F1E /* awesome_notifications */,
+				2C9D98AB36A1904531227600349C6F1E /* awesome_notifications.framework */,
 				F8ECCB3B4E33C0FDD00B394CC2C7EA2E /* Google-Mobile-Ads-SDK */,
 				3998091512768CD07733CB4F02B4BD9F /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */,
 				DB95285DF76CA388B0584D68CAE5BD60 /* google_mobile_ads */,
@@ -2075,7 +2008,6 @@
 			children = (
 				12816E74B00B9F0EC6B9A0AC8E94E8CF /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2118,7 +2050,6 @@
 				3C3B52CD26E709164EF120FAA6D0A6EE /* UnknownPermissionStrategy.h */,
 				EA6625146A8825F8C8A1B8560B02D03C /* UnknownPermissionStrategy.m */,
 			);
-			name = strategies;
 			path = strategies;
 			sourceTree = "<group>";
 		};
@@ -2136,7 +2067,6 @@
 			children = (
 				24C3AFC4EE7E52E06209B24A521B1A08 /* webview_flutter_wkwebview */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -2145,7 +2075,6 @@
 			children = (
 				FB705E6D040AC5AA938CF9AAFCCEFA2B /* PrivacyInfo.xcprivacy */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -2154,7 +2083,6 @@
 			children = (
 				03C18D39C6CEC984E96760C217931EB6 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2163,7 +2091,6 @@
 			children = (
 				272CFC47F1B56258AAAB12B0514D51DA /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -2172,7 +2099,6 @@
 			children = (
 				BF3BB278B070BFB29FB3B20331E95FA6 /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2181,7 +2107,6 @@
 			children = (
 				3B3277C4410B4C2B16C815EF7B44430A /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -2190,7 +2115,6 @@
 			children = (
 				6D60449223E94CB87E0FE867761FC79E /* webview_flutter_wkwebview */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -2199,7 +2123,6 @@
 			children = (
 				77BD7098F88C12944AAA57FB611843DD /* sqflite_darwin */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -2217,7 +2140,6 @@
 			children = (
 				D554F0D24D850D0A5174A6231F9D8616 /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -2226,7 +2148,6 @@
 			children = (
 				48A4E5DC28FBE89A6E709D78AF8051DC /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -2276,7 +2197,6 @@
 				F3F74F5563C5CE0A45513DDCC2A49955 /* WebViewFlutterWKWebViewExternalAPI.swift */,
 				F263B66641656015A4C5FCFB6AD9F0CA /* WebViewProxyAPIDelegate.swift */,
 			);
-			name = webview_flutter_wkwebview;
 			path = webview_flutter_wkwebview;
 			sourceTree = "<group>";
 		};
@@ -2285,7 +2205,6 @@
 			children = (
 				6A805914A687A0FB4BAEA2298B56D3A3 /* Sources */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -2294,7 +2213,6 @@
 			children = (
 				4B752F777378141146CA2840FC8D9953 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2303,7 +2221,6 @@
 			children = (
 				EE5ED5C16BE4D8123C8D0B643FD4863E /* NativeTemplates */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -2312,7 +2229,6 @@
 			children = (
 				E28CE93BDD9E7357DB8DBC8D8B786B8A /* darwin */,
 			);
-			name = webview_flutter_wkwebview;
 			path = webview_flutter_wkwebview;
 			sourceTree = "<group>";
 		};
@@ -2321,7 +2237,6 @@
 			children = (
 				612DD850CCCE866E44A9EE75CB051E3D /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -2330,7 +2245,6 @@
 			children = (
 				F510BE771D02E2F1FA7797747C88110A /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -2351,7 +2265,6 @@
 				2E9EB5AF582889F0CA0EC722AFD178CD /* in_app_purchase_storekit.h */,
 				B30480C63493BDDB87E98DAEE350AE6D /* messages.g.h */,
 			);
-			name = in_app_purchase_storekit_objc;
 			path = in_app_purchase_storekit_objc;
 			sourceTree = "<group>";
 		};
@@ -2368,7 +2281,6 @@
 			children = (
 				E4EB686E6CD279913C8C3A7434F8883F /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2377,7 +2289,6 @@
 			children = (
 				D9A9EFCFB8F16FB331E88B52BC532082 /* Resources */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -2386,7 +2297,6 @@
 			children = (
 				1B578AB2CA36CF21E39F9F4918088C1B /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -2395,7 +2305,6 @@
 			children = (
 				D3D35645168DA3AA0EE71BB21EE2F80F /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2404,7 +2313,6 @@
 			children = (
 				62A9DB12FDE51FB01AF4DF83571CA18E /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2422,7 +2330,6 @@
 			children = (
 				CC8EAC38C2D431EB8F51964B7527FC8B /* sqflite_darwin */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -2431,7 +2338,6 @@
 			children = (
 				B9B109205D62056DB16756C0FDE75A9B /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -2444,7 +2350,6 @@
 				A7FE29E7DFA7F9676D8A3397CBFEBEE8 /* FlutterBitmapUtils.swift */,
 				A5404043A126EA46F43C4EF3ADE8C98A /* SwiftAwesomeNotificationsPlugin.swift */,
 			);
-			name = lib;
 			path = lib;
 			sourceTree = "<group>";
 		};
@@ -2464,7 +2369,6 @@
 			children = (
 				EE138A2C291626946531A5CD7CC2B81F /* shared_preferences_foundation */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -2473,7 +2377,6 @@
 			children = (
 				1492DF71F480D748CE409AB9FA32EC0A /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2482,7 +2385,6 @@
 			children = (
 				618825B1362E2231F450FDBA6329D86A /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -2493,7 +2395,6 @@
 				CFD70A1DE092AB4041C882FE52EF86CF /* AwesomeNotificationsPlugin.m */,
 				7DC6B831E275735DA5894ADE7FF03D0C /* lib */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -2502,7 +2403,6 @@
 			children = (
 				A004C727122DDF55605C653300E7476F /* shared_preferences_foundation */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -2511,7 +2411,6 @@
 			children = (
 				0B54B91B5020AE84F4FCA365834F3381 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2536,7 +2435,6 @@
 			children = (
 				63FC636B5BC1C86568C8900C9861AD6B /* Sources */,
 			);
-			name = webview_flutter_wkwebview;
 			path = webview_flutter_wkwebview;
 			sourceTree = "<group>";
 		};
@@ -2560,7 +2458,6 @@
 				62DA8501829B33925459534E806C8BBB /* strategies */,
 				B7C54017A68ACB9C3CEA9C6E8302EA6F /* util */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -2570,7 +2467,6 @@
 				63AF88F1C5865CC085479F880A82C2F4 /* .. */,
 				71CDF213B6D77CC0CCFC444C67704DB8 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2579,7 +2475,6 @@
 			children = (
 				FD7FF999DE6D845043A42E8FAED819BA /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -2588,7 +2483,6 @@
 			children = (
 				DD1A420D3E15190A1ED553DB149118A5 /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -2599,7 +2493,6 @@
 				9F6CDFE717896028523798131DC87C3B /* sk2_pigeon.g.swift */,
 				9E73A5D05AD5B30E45A36876674AF63F /* StoreKit2Translators.swift */,
 			);
-			name = StoreKit2;
 			path = StoreKit2;
 			sourceTree = "<group>";
 		};
@@ -2639,7 +2532,6 @@
 			children = (
 				1466A30A96F9C2A26B668CAB61952DCA /* darwin */,
 			);
-			name = in_app_purchase_storekit;
 			path = in_app_purchase_storekit;
 			sourceTree = "<group>";
 		};
@@ -2648,7 +2540,6 @@
 			children = (
 				49943D1CFA5D67F1D8BE4423229163D8 /* awesome_notifications */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -2666,7 +2557,6 @@
 			children = (
 				2A0A414CAA3E41E07C5758E0EC5A096A /* Sources */,
 			);
-			name = shared_preferences_foundation;
 			path = shared_preferences_foundation;
 			sourceTree = "<group>";
 		};
@@ -2675,7 +2565,6 @@
 			children = (
 				623B920D9C588CA19CF056ACEB2A517A /* Resources */,
 			);
-			name = shared_preferences_foundation;
 			path = shared_preferences_foundation;
 			sourceTree = "<group>";
 		};
@@ -2788,7 +2677,6 @@
 				8A81198E01AA2CEF541944564DF5AA0B /* UNMutableNotificationContentExtension.swift */,
 				ADA1085AA52C5D464E3D2ACEBB6CE3D2 /* Support Files */,
 			);
-			name = IosAwnCore;
 			path = IosAwnCore;
 			sourceTree = "<group>";
 		};
@@ -2814,7 +2702,6 @@
 			children = (
 				3A8007994C9AB38F11DA2D7F4FD2C350 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2823,7 +2710,6 @@
 			children = (
 				4491BE9D88CD301F652E3BA2CA8F78DF /* ios */,
 			);
-			name = permission_handler_apple;
 			path = permission_handler_apple;
 			sourceTree = "<group>";
 		};
@@ -2832,7 +2718,6 @@
 			children = (
 				498CF6057619F8019C025507B6D4FC71 /* Sources */,
 			);
-			name = in_app_purchase_storekit;
 			path = in_app_purchase_storekit;
 			sourceTree = "<group>";
 		};
@@ -2871,7 +2756,6 @@
 				C62AAF81C9C557E35E8C7692747EF033 /* in_app_purchase_storekit */,
 				C1791C42C80E8E33CF0B546E917FB4EE /* in_app_purchase_storekit_objc */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -2895,7 +2779,6 @@
 			children = (
 				80F955A46727FEBEBF88E10C8E67441E /* darwin */,
 			);
-			name = shared_preferences_foundation;
 			path = shared_preferences_foundation;
 			sourceTree = "<group>";
 		};
@@ -2904,7 +2787,6 @@
 			children = (
 				56021DFA5F3D464959EE4262C51D3365 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2922,7 +2804,6 @@
 			children = (
 				952668B4AD5E030F26479105E18CCBDF /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2931,7 +2812,6 @@
 			children = (
 				71CE519CE401A8E19FD3E1D634FD836A /* in_app_purchase_storekit_objc */,
 			);
-			name = include;
 			path = include;
 			sourceTree = "<group>";
 		};
@@ -2940,7 +2820,6 @@
 			children = (
 				B88167D7E6E985A33B87A371E1E31E5F /* google_mobile_ads */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -2949,7 +2828,6 @@
 			children = (
 				DDEBDEDF7C09F0611C6B35EFD0C706B8 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2958,7 +2836,6 @@
 			children = (
 				D0DC762F7B7C2115AEDF425F96ADBE23 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2967,7 +2844,6 @@
 			children = (
 				5DA5C85E9F0497F2F75C586178C60F73 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -2976,7 +2852,6 @@
 			children = (
 				8537B2561DF54DC15EDED06395E657BD /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -2986,7 +2861,6 @@
 				336CF3840FD276B60AAB989747E5B143 /* Codec.h */,
 				AB91FB57A8044788DB639A22ED327D0A /* Codec.m */,
 			);
-			name = util;
 			path = util;
 			sourceTree = "<group>";
 		};
@@ -2996,7 +2870,6 @@
 				5A79B5D04EB2F85452E1C02D03D7AF4F /* .. */,
 				6BD4901E0D14B8BB4B349540EC485727 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3005,7 +2878,6 @@
 			children = (
 				FFFA4EAE1973637E627EDE05B73CB7DE /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3014,7 +2886,6 @@
 			children = (
 				D9220C4DA3A0814670EACB116E5A15EB /* ios */,
 			);
-			name = google_mobile_ads;
 			path = google_mobile_ads;
 			sourceTree = "<group>";
 		};
@@ -3023,7 +2894,6 @@
 			children = (
 				7B0D36D9226F21814E9D246FB5A55FD3 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3032,7 +2902,6 @@
 			children = (
 				A658A2D722508457C2B372AD9FD68C75 /* permission_handler_apple */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -3041,7 +2910,6 @@
 			children = (
 				4DD28838ACE7E04FE0426B88A8750F13 /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3050,7 +2918,6 @@
 			children = (
 				ED77B8663F7340C31A692A161BD24E06 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3070,7 +2937,6 @@
 			children = (
 				3A9AE595680701252543BAC59A4F5DC5 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3079,7 +2945,6 @@
 			children = (
 				2A584A250395EE1BE8C1ADC7C3730464 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3088,7 +2953,6 @@
 			children = (
 				B5C1411A5A81E17DF4869AF9DD9A1074 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3104,7 +2968,6 @@
 				1E2EBEA8DE602877A21CF38CB3F38B63 /* GADTTemplateView.h */,
 				2BE891D9A359C56BCA054CEFCED5FBD9 /* GADTTemplateView.m */,
 			);
-			name = GoogleAdsMobileIosNativeTemplates;
 			path = GoogleAdsMobileIosNativeTemplates;
 			sourceTree = "<group>";
 		};
@@ -3121,7 +2984,6 @@
 				B15516D7687C07158D2B2D5DA981E0A3 /* include */,
 				3E38E7394F31A0A3600BF8193D1254A8 /* Protocols */,
 			);
-			name = in_app_purchase_storekit_objc;
 			path = in_app_purchase_storekit_objc;
 			sourceTree = "<group>";
 		};
@@ -3130,7 +2992,6 @@
 			children = (
 				D636F7603850549982D96CEE9E510D89 /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -3139,7 +3000,6 @@
 			children = (
 				CCFDD180E8624A6209A745E7F7D85BFD /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -3149,7 +3009,6 @@
 				F1514D952ED113A3E7BD2265F36AEE47 /* InAppPurchasePlugin.swift */,
 				9571D6F8426C0A61E4980890533C7611 /* StoreKit2 */,
 			);
-			name = in_app_purchase_storekit;
 			path = in_app_purchase_storekit;
 			sourceTree = "<group>";
 		};
@@ -3158,7 +3017,6 @@
 			children = (
 				A6636F5B7D18935F9A8B8B3F1D1C3C50 /* in_app_purchase_storekit */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -3167,7 +3025,6 @@
 			children = (
 				E5354F78E3362A2B61ABAA3C2EE14CC2 /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -3176,7 +3033,6 @@
 			children = (
 				FFCB802368555A8678110AE2FC38174D /* google_mobile_ads */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -3185,7 +3041,6 @@
 			children = (
 				E43FF3ED3105FBE8CBE2090BFFC279AA /* Sources */,
 			);
-			name = sqflite_darwin;
 			path = sqflite_darwin;
 			sourceTree = "<group>";
 		};
@@ -3194,7 +3049,6 @@
 			children = (
 				B3249CCE43CC285AA5F316914B3522B3 /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3224,7 +3078,6 @@
 			children = (
 				04B71E8F7C0EC4A0BA83C4314044E224 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3233,7 +3086,6 @@
 			children = (
 				CC3CB518749446014200A0233B8EBA3D /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -3244,7 +3096,6 @@
 				F75D8CAA9FA333A70865B295BE9AEDCA /* GADTMediumTemplateView.xib */,
 				68F00F0A73362B3F660A30C74904CEF2 /* GADTSmallTemplateView.xib */,
 			);
-			name = GoogleAdsMobileIosNativeTemplates;
 			path = GoogleAdsMobileIosNativeTemplates;
 			sourceTree = "<group>";
 		};
@@ -3276,7 +3127,6 @@
 			children = (
 				456777923C6B710EE91A628B9DDFDC94 /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3285,7 +3135,6 @@
 			children = (
 				9FB972DF41D27845A0945596649B5729 /* shared_preferences_foundation */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -3294,7 +3143,6 @@
 			children = (
 				AE4D90E7D6F3F7292A6644AA2087DA5B /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3303,7 +3151,6 @@
 			children = (
 				7A954031439DC2FD8D21C71D1C717438 /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -3312,7 +3159,6 @@
 			children = (
 				34C536DBC9AEC4896D27559F7E17CDB7 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3321,7 +3167,6 @@
 			children = (
 				6F45E3CEBFE8BD8438EBCF2285ED96DC /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3330,7 +3175,6 @@
 			children = (
 				30854B32B291AB486155A025C5EDD231 /* Classes */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -3339,7 +3183,6 @@
 			children = (
 				F03A3FFC537AB32CFD11712C26FE3CCF /* ios */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3348,7 +3191,6 @@
 			children = (
 				86F0CE5B1066AA7FEEC49E9D1C834A40 /* Classes */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -3357,7 +3199,6 @@
 			children = (
 				D44F97F0FE86204AD10D2021487DE64A /* PrivacyInfo.xcprivacy */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -3366,7 +3207,6 @@
 			children = (
 				9DBCF13F6941D951AC2A66DD73002D78 /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -3394,7 +3234,6 @@
 			children = (
 				C00B4E7AD95805042CC12D548E80CC4B /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3403,7 +3242,6 @@
 			children = (
 				A595B89C7798DF0EE7DAE91C96537D05 /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3412,7 +3250,6 @@
 			children = (
 				D40F92FD526D172DDC0A275FE348C3E1 /* darwin */,
 			);
-			name = shared_preferences_foundation;
 			path = shared_preferences_foundation;
 			sourceTree = "<group>";
 		};
@@ -3421,7 +3258,6 @@
 			children = (
 				F8DE415304DD5BA171788904AB3EC695 /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -3446,7 +3282,6 @@
 			children = (
 				8DB85691EDF2DB8AA152F4FF6D96F39D /* webview_flutter_wkwebview */,
 			);
-			name = darwin;
 			path = darwin;
 			sourceTree = "<group>";
 		};
@@ -3465,7 +3300,6 @@
 			children = (
 				34148B121BBF98A565C8414177D6D3AE /* sqflite_darwin */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -3482,7 +3316,6 @@
 			children = (
 				00FF21BDD041756D16C734E7E22F0915 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3491,7 +3324,6 @@
 			children = (
 				ADFA49D3653BCB2B3CD3027292A2B0F4 /* shared_preferences_foundation */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -3500,7 +3332,6 @@
 			children = (
 				1745E895A301E9C5954C3098DD87FC95 /* PrivacyInfo.xcprivacy */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -3509,7 +3340,6 @@
 			children = (
 				6456EA3DD383171852002CC4524BF942 /* Resources */,
 			);
-			name = in_app_purchase_storekit;
 			path = in_app_purchase_storekit;
 			sourceTree = "<group>";
 		};
@@ -3518,7 +3348,6 @@
 			children = (
 				08DF2839D73D89320045BA97C510717F /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3542,7 +3371,6 @@
 			children = (
 				B58A93E6AE2EEBACBF83AE1D6DE51F6D /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3551,7 +3379,6 @@
 			children = (
 				AC0F2F06D927ED2FB2CE7B9EAD310B1D /* Sources */,
 			);
-			name = in_app_purchase_storekit;
 			path = in_app_purchase_storekit;
 			sourceTree = "<group>";
 		};
@@ -3571,7 +3398,6 @@
 			children = (
 				59E979FAE54C7699A2336394729319D1 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3580,7 +3406,6 @@
 			children = (
 				676E1B049DABE85239D803D2A7D818AD /* habittracker */,
 			);
-			name = Downloads;
 			path = Downloads;
 			sourceTree = "<group>";
 		};
@@ -3589,7 +3414,6 @@
 			children = (
 				87FECB1866ADF1559D3D0E0AB75C0E2A /* Sources */,
 			);
-			name = shared_preferences_foundation;
 			path = shared_preferences_foundation;
 			sourceTree = "<group>";
 		};
@@ -3598,7 +3422,6 @@
 			children = (
 				D144B86C9DCB0B77C2BB4D70B7420F3E /* GoogleAdsMobileIosNativeTemplates */,
 			);
-			name = NativeTemplates;
 			path = NativeTemplates;
 			sourceTree = "<group>";
 		};
@@ -3607,7 +3430,6 @@
 			children = (
 				2E3E933286C1FE1B3E65B8F9A451367D /* webview_flutter_wkwebview */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -3616,7 +3438,6 @@
 			children = (
 				CC321528D1DD751F39096CEB9A106BCD /* .symlinks */,
 			);
-			name = ios;
 			path = ios;
 			sourceTree = "<group>";
 		};
@@ -3626,7 +3447,6 @@
 				36AAD9B5E5F6920629B62AF904F00F2D /* .. */,
 				67E29717EBAAB199738B187822E1FA95 /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3656,7 +3476,6 @@
 			children = (
 				361EC4810669A66887A8294F02D4D943 /* habittracker */,
 			);
-			name = habittracker;
 			path = habittracker;
 			sourceTree = "<group>";
 		};
@@ -3665,7 +3484,6 @@
 			children = (
 				2A4804349E8DFDE327906C9806917CFB /* in_app_purchase_storekit */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -3674,7 +3492,6 @@
 			children = (
 				F5809FABC99AD8368DFF832F7BAD1BEE /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -3702,7 +3519,6 @@
 			children = (
 				B23AA94FBCE92FD84FD74FCB5120E554 /* plugins */,
 			);
-			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
@@ -3711,7 +3527,6 @@
 			children = (
 				607E0DE2AED2344A34FAA9B354AC58AD /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3720,7 +3535,6 @@
 			children = (
 				DDE24AF53C2E0D96E571B468EAFDFA1D /* shared_preferences_foundation */,
 			);
-			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
@@ -3729,7 +3543,6 @@
 			children = (
 				1E70F4D87A4CEA1FD647E9290917B9DF /* ios */,
 			);
-			name = google_mobile_ads;
 			path = google_mobile_ads;
 			sourceTree = "<group>";
 		};
@@ -3738,7 +3551,6 @@
 			children = (
 				EDE497C790A838004470D9EAFB61751C /* Downloads */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3747,7 +3559,6 @@
 			children = (
 				7658BC6E8F0397B0D8763D444C4FD101 /* .. */,
 			);
-			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -4128,7 +3939,7 @@
 			);
 			name = awesome_notifications;
 			productName = awesome_notifications;
-			productReference = 2C9D98AB36A1904531227600349C6F1E /* awesome_notifications */;
+			productReference = 2C9D98AB36A1904531227600349C6F1E /* awesome_notifications.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9BEBE93FD9148D6C935FE0AB5CA72F20 /* google_mobile_ads */ = {
@@ -4300,8 +4111,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 623F746FEB7F2F9C2C25E779AFA02BA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -5096,7 +4905,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/awesome_notifications/awesome_notifications-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5998,7 +5807,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/awesome_notifications/awesome_notifications-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -6263,7 +6072,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/awesome_notifications/awesome_notifications-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

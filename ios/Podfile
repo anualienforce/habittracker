@@ -8,6 +8,7 @@ project 'Runner', {
   'Release' => :release,
 }
 
+# Find Flutter root
 def flutter_root
   generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
   unless File.exist?(generated_xcode_build_settings_path)
@@ -39,7 +40,9 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
+
     target.build_configurations.each do |config|
+      # ✅ Use Swift 5.7 explicitly to avoid plugin errors
       config.build_settings['SWIFT_VERSION'] = '5.7'
       config.build_settings['ENABLE_BITCODE'] = 'NO'
 
@@ -65,4 +68,3 @@ post_install do |installer|
     puts "Skipping IosAwnCore auto-import fix: #{e.message}"
   end
 end
-
