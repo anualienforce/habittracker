@@ -16,20 +16,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Cache Flutter SDK
-      - name: Cache Flutter SDK
-        uses: actions/cache@v4
-        with:
-          path: ${{ runner.tool_cache }}/flutter
-          key: flutter-${{ runner.os }}-stable-3.35.1-${{ runner.arch }}
-          restore-keys: |
-            flutter-${{ runner.os }}-stable-3.35.1-
 
       # 3️⃣ Set up Flutter (will use cache if available)
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.35.6'
+          flutter-version: '3.22.2'
           cache: true  # automatically caches pub packages
 
 
