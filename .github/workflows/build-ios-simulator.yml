@@ -12,25 +12,28 @@ jobs:
     runs-on: macos-14
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout your code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Set up Flutter with caching
+
+      # 3️⃣ Set up Flutter (will use cache if available)
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.35.6'
-          cache: true
+          cache: true  # automatically caches pub packages
 
-      # 3️⃣ Check Flutter & Xcode version
+
+      # 4 Check Xcode version
       - name: Check Flutter version
         run: flutter --version
 
+      # 4️⃣ Check Xcode version
       - name: Check Xcode version
         run: xcodebuild -version
 
-      # 4️⃣ Cache CocoaPods
+      # 5️⃣ Cache CocoaPods
       - name: Cache CocoaPods
         uses: actions/cache@v4
         with:
@@ -38,40 +41,21 @@ jobs:
           key: pods-${{ hashFiles('ios/Podfile.lock') }}
           restore-keys: pods-
 
-      # 5️⃣ Install Flutter dependencies
+      # 6️⃣ Upgrade Flutter dependencies
       - name: Flutter pub get
         run: flutter pub get
 
-      # 6️⃣ Clean Pods and remove old bridging headers
-      - name: Clean Pods & Remove Bridging Headers
+      # 7️⃣ Clean and re-install Pods
+      - name: Clean and re-install Pods
         run: |
-          echo "=== Cleaning Pods ==="
           cd ios
           rm -rf Pods
           rm -f Podfile.lock
           pod repo update
-          echo "=== Removing all Bridging Headers ==="
-          find . -name "*Bridging-Header.h" -exec rm {} \;
-          echo "✅ All bridging headers removed"
-          echo "=== Removing SWIFT_OBJC_BRIDGING_HEADER settings ==="
-          plutil -replace TARGETS.Runner.buildSettings.SWIFT_OBJC_BRIDGING_HEADER -string "" Runner.xcodeproj/project.pbxproj || true
+          pod install
           cd ..
 
-      # 7️⃣ Ensure GeneratedPluginRegistrant exists
-      - name: Ensure GeneratedPluginRegistrant.swift
-        run: |
-          echo "=== Regenerating GeneratedPluginRegistrant.swift ==="
-          flutter pub get
-          flutter clean
-          flutter build ios --simulator --no-codesign || true
-          if [ ! -f "ios/Flutter/GeneratedPluginRegistrant.swift" ]; then
-            echo "❌ GeneratedPluginRegistrant.swift still missing!"
-            exit 1
-          else
-            echo "✅ GeneratedPluginRegistrant.swift exists"
-          fi
-
-      # 8️⃣ Build iOS Simulator app
+      # 8️⃣ Build iOS app for Simulator
       - name: Build iOS Simulator app
         run: flutter build ios --simulator --no-codesign
 
