@@ -39,25 +39,34 @@ end
 
 # In your ios/Podfile
 
+# PASTE THIS ENTIRE BLOCK TO REPLACE YOUR OLD post_install
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
 
     target.build_configurations.each do |config|
-      # ❌ REMOVE THIS LINE
-      # config.build_settings['SWIFT_VERSION'] = '5.7'
-
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '17.0'
+      # This section is now clean. We let Xcode and Flutter use their
+      # recommended modern settings. The old conflicting lines that set
+      # DEFINES_MODULE = 'NO' and SWIFT_VERSION have been removed.
 
       config.build_settings['ENABLE_BITCODE'] = 'NO'
       config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
-
-      # ❌ TRY REMOVING THIS LINE. If the build fails later with an architecture error, you can add it back.
-      # config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
-
-      # ... the rest of your script
     end
   end
 
-  # ... the rest of your post_install block
+  # This keeps your custom fix for the IosAwnCore package
+  begin
+    ios_aw_core_files = Dir["#{installer.sandbox.pod_dir('IosAwnCore')}/IosAwnCore/Classes/**/*.swift"]
+    ios_aw_core_files.each do |file|
+      content = File.read(file)
+      new_content = ""
+      new_content += "import UIKit\n" unless content.include?("import UIKit")
+      new_content += "import UserNotifications\n" unless content.include?("import UserNotifications")
+      new_content += content
+      File.write(file, new_content)
+    end
+  rescue => e
+    puts "Skipping IosAwnCore auto-import fix: #{e.message}"
+  end
 end
