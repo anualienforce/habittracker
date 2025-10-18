@@ -1,4 +1,4 @@
-name: Build iOS Simulator App
+name: Build iOS Simulator App (Debug Mode)
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-ios:
-    name: Build iOS App for Simulator
+    name: Build iOS App for Simulator (Debug Investigation)
     runs-on: macos-14
 
     steps:
@@ -16,24 +16,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-
-      # 3️⃣ Set up Flutter (will use cache if available)
+      # 2️⃣ Set up Flutter
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.35.6'
-          cache: true  # automatically caches pub packages
+          cache: true
 
+      # 3️⃣ Check Flutter & Xcode versions
+      - name: Check tool versions
+        run: |
+          flutter --version
+          xcodebuild -version
+          swift --version
+          pod --version
+          which xcodebuild
+          echo "Xcode path: $(xcode-select -p)"
 
-      # 4 Check Xcode version
-      - name: Check Flutter version
-        run: flutter --version
-
-      # 4️⃣ Check Xcode version
-      - name: Check Xcode version
-        run: xcodebuild -version
-
-      # 5️⃣ Cache CocoaPods
+      # 4️⃣ Cache CocoaPods
       - name: Cache CocoaPods
         uses: actions/cache@v4
         with:
@@ -41,30 +41,61 @@ jobs:
           key: pods-${{ hashFiles('ios/Podfile.lock') }}
           restore-keys: pods-
 
-      # 6️⃣ Upgrade Flutter dependencies
+      # 5️⃣ Get Flutter dependencies
       - name: Flutter pub get
         run: flutter pub get
 
-      # 7️⃣ Clean and re-install Pods
+      # 6️⃣ Clean & reinstall Pods with verbose output
       - name: Clean and re-install Pods
         run: |
           cd ios
-          rm -rf Pods
-          rm -f Podfile.lock
+          rm -rf Pods Podfile.lock
           pod repo update
           pod install --verbose
           cd ..
 
-      # 8️⃣ Build iOS app for Simulator
-      - name: Build iOS Simulator app
-        run: flutter build ios --simulator --no-codesign
+      # 7️⃣ Debug: List all bridging headers and Swift modules
+      - name: Debug bridging headers and Swift modules
+        run: |
+          echo "=== Searching for bridging headers ==="
+          find ios -name "*.h" | grep -i "bridging" || echo "No bridging headers found"
+          
+          echo "=== Listing Swift modulemap files ==="
+          find ios -name "module.modulemap" || echo "No modulemap files found"
+          
+          echo "=== Checking Build Settings for Bridging Headers ==="
+          cd ios
+          xcodebuild -showBuildSettings | grep -i "SWIFT_OBJC_BRIDGING_HEADER" || echo "No custom bridging header in build settings"
+          cd ..
 
-      # 9️⃣ List build output
+      # 8️⃣ Debug: Show Podspecs with Swift or bridging references
+      - name: Check Podspecs for Swift bridging usage
+        run: |
+          echo "=== Checking Podspecs for SWIFT/Bridging references ==="
+          grep -r "swift" ios/Pods/**/*.podspec 2>/dev/null || true
+          grep -r "bridging" ios/Pods/**/*.podspec 2>/dev/null || true
+
+      # 9️⃣ Build iOS app for simulator with full verbose logs
+      - name: Build iOS Simulator app (Verbose)
+        run: |
+          flutter clean
+          flutter build ios --simulator --no-codesign -v
+
+      # 🔟 If build fails, dump logs for debugging
+      - name: Dump Xcode DerivedData info (if available)
+        if: failure()
+        run: |
+          echo "=== Dumping DerivedData logs ==="
+          find ~/Library/Developer/Xcode/DerivedData -type f -name "*.log" | tail -n 30 || echo "No logs found"
+          ls -R ~/Library/Developer/Xcode/DerivedData || true
+
+      # 1️⃣1️⃣ List build output
       - name: List build artifacts
-        run: ls -R build/ios/iphonesimulator
+        run: ls -R build/ios/iphonesimulator || true
 
-      # 🔟 Upload .app as artifact
+      # 1️⃣2️⃣ Upload .app artifact
       - name: Upload .app artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: ios-simulator-app
