@@ -51,13 +51,18 @@ post_install do |installer|
   end
 
   # Auto-fix IosAwnCore imports to prevent bridging errors
-  ios_aw_core_files = Dir["#{installer.sandbox.pod_dir}/IosAwnCore/IosAwnCore/Classes/**/*.swift"]
-  ios_aw_core_files.each do |file|
-    content = File.read(file)
-    new_content = ""
-    new_content += "import UIKit\n" unless content.include?("import UIKit")
-    new_content += "import UserNotifications\n" unless content.include?("import UserNotifications")
-    new_content += content
-    File.write(file, new_content)
+  begin
+    ios_aw_core_files = Dir["#{installer.sandbox.pod_dir('IosAwnCore')}/IosAwnCore/Classes/**/*.swift"]
+    ios_aw_core_files.each do |file|
+      content = File.read(file)
+      new_content = ""
+      new_content += "import UIKit\n" unless content.include?("import UIKit")
+      new_content += "import UserNotifications\n" unless content.include?("import UserNotifications")
+      new_content += content
+      File.write(file, new_content)
+    end
+  rescue => e
+    puts "Skipping IosAwnCore auto-import fix: #{e.message}"
   end
 end
+
