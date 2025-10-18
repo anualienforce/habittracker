@@ -37,35 +37,24 @@ target 'Runner' do
   end
 end
 
+# In your ios/Podfile
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
 
     target.build_configurations.each do |config|
-      # ✅ Explicit Swift version to avoid plugin compile errors
-      config.build_settings['SWIFT_VERSION'] = '5.7'
+      # ❌ REMOVE THIS LINE
+      # config.build_settings['SWIFT_VERSION'] = '5.7'
+
       config.build_settings['ENABLE_BITCODE'] = 'NO'
-      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64' # CI-friendly simulator build
 
-      if target.name != 'Flutter'
-        config.build_settings['DEFINES_MODULE'] = 'NO'
-        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
-      end
+      # ❌ TRY REMOVING THIS LINE. If the build fails later with an architecture error, you can add it back.
+      # config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+
+      # ... the rest of your script
     end
   end
 
-  # Auto-fix IosAwnCore imports to prevent bridging errors
-  begin
-    ios_aw_core_files = Dir["#{installer.sandbox.pod_dir('IosAwnCore')}/IosAwnCore/Classes/**/*.swift"]
-    ios_aw_core_files.each do |file|
-      content = File.read(file)
-      new_content = ""
-      new_content += "import UIKit\n" unless content.include?("import UIKit")
-      new_content += "import UserNotifications\n" unless content.include?("import UserNotifications")
-      new_content += content
-      File.write(file, new_content)
-    end
-  rescue => e
-    puts "Skipping IosAwnCore auto-import fix: #{e.message}"
-  end
+  # ... the rest of your post_install block
 end
