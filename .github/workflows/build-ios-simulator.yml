@@ -29,8 +29,13 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.35.1'
+          flutter-version: 'stable'
           cache: true  # automatically caches pub packages
+
+
+      # 4 Check Xcode version
+      - name: Check Flutter version
+        run: flutter --version
 
       # 4️⃣ Check Xcode version
       - name: Check Xcode version
