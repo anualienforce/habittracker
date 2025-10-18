@@ -40,34 +40,38 @@ target 'Runner' do
 end
 
 post_install do |installer|
-  # --- Section 1: Apply settings to all Pod (dependency) targets ---
-  installer.pods_project.targets.each do |target|
-    flutter_additional_ios_build_settings(target)
-    target.build_configurations.each do |config|
-      # Fixes the "bridging headers" error
-      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
-      # Silences Bitcode warnings
-      config.build_settings['ENABLE_BITCODE'] = 'NO'
-    end
-  end
 
-  # --- Section 2: Apply settings to the main App (Runner) target ---
-  installer.aggregate_targets.each do |aggregate_target|
-    aggregate_target.user_project.targets.each do |target|
+  # --- Section 1: Forcefully correct the main project targets (Runner, RunnerTests) ---
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
       target.build_configurations.each do |config|
-        # Fixes the "bridging headers" error
+
+        # a) Fix the "bridging headers" error
         config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
-        # Silences Bitcode warnings
+
+        # b) Silence Bitcode warnings (deprecated)
         config.build_settings['ENABLE_BITCODE'] = 'NO'
 
-        # --- THIS IS THE NEW, CRITICAL FIX ---
-        # It corrects the Library Search Paths to fix "Undefined symbol" linker errors.
-        # It ensures the project inherits the paths from CocoaPods.
+        # c) Fix the "Undefined symbol" linker error by ensuring search paths are inherited
         config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = [
             '$(inherited)',
             '@executable_path/Frameworks',
         ]
+
       end
+    end
+  end
+
+  # --- Section 2: Forcefully correct all Pod dependency targets ---
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+
+      # a) Fix the "bridging headers" error
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
+
+      # b) Silence Bitcode warnings (deprecated)
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+
     end
   end
 
@@ -85,4 +89,5 @@ post_install do |installer|
   rescue => e
     puts "Skipping IosAwnCore auto-import fix: #{e.message}"
   end
+
 end
