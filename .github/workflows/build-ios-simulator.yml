@@ -45,14 +45,39 @@ jobs:
       - name: Flutter pub get
         run: flutter pub get
 
-      # 6️⃣ Clean & reinstall Pods with verbose output
+      # 7️⃣ Clean and re-install Pods
       - name: Clean and re-install Pods
         run: |
           cd ios
-          rm -rf Pods Podfile.lock
+          rm -rf Pods
+          rm -f Podfile.lock
           pod repo update
           pod install --verbose
           cd ..
+
+      # 🧹 Auto-remove unused bridging header (fix for Xcode 16 build error)
+      - name: Detect and remove unused bridging header
+        run: |
+          echo "=== Checking for Runner-Bridging-Header.h ==="
+          if [ -f "ios/Runner/Runner-Bridging-Header.h" ]; then
+            echo "Found bridging header. Checking if it's actually used..."
+            USED_COUNT=$(grep -R "Runner-Bridging-Header.h" ios/Runner.xcodeproj 2>/dev/null | wc -l)
+            if [ "$USED_COUNT" -eq 0 ]; then
+              echo "⚙️ Not referenced in project. Removing bridging header..."
+              rm ios/Runner/Runner-Bridging-Header.h
+              plutil -remove "SWIFT_OBJC_BRIDGING_HEADER" ios/Runner.xcodeproj/project.pbxproj || true
+              echo "✅ Removed unused bridging header and cleaned project settings."
+            else
+              echo "ℹ️ Bridging header is still referenced ($USED_COUNT matches). Keeping it."
+            fi
+          else
+            echo "✅ No bridging header found. Skipping."
+          fi
+
+      # 8️⃣ Build iOS app for Simulator
+      - name: Build iOS Simulator app
+        run: flutter build ios --simulator --no-codesign
+
 
       # 7️⃣ Debug: List all bridging headers and Swift modules
       - name: Debug bridging headers and Swift modules
