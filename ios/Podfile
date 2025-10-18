@@ -41,8 +41,16 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
     target.build_configurations.each do |config|
+      # Swift compatibility
       config.build_settings['SWIFT_VERSION'] = '5.7'
       config.build_settings['ENABLE_BITCODE'] = 'NO'
+
+      # Disable module interface generation for non-Flutter targets
+      if target.name != 'Flutter'
+        config.build_settings['DEFINES_MODULE'] = 'NO'
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
+      end
     end
   end
 end
+
