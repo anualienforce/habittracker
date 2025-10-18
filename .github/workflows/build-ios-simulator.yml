@@ -50,7 +50,7 @@ jobs:
           rm -rf Pods
           rm -f Podfile.lock
           pod repo update
-          pod install --verbose
+          pod install
           cd ..
 
       # 8️⃣ Force remove all bridging headers
@@ -60,12 +60,13 @@ jobs:
           find ios -name "*Bridging-Header.h" -exec rm -f {} \;
           echo "✅ All Bridging Headers removed"
 
-      # 9️⃣ Remove SWIFT_OBJC_BRIDGING_HEADER from Xcode project
-      - name: Remove SWIFT_OBJC_BRIDGING_HEADER build setting
+      # 9️⃣ Force remove SWIFT_OBJC_BRIDGING_HEADER from Xcode project
+      - name: Remove all SWIFT_OBJC_BRIDGING_HEADER references
         run: |
-          echo "=== Removing SWIFT_OBJC_BRIDGING_HEADER setting ==="
-          plutil -replace TARGETS.Runner.buildSettings.SWIFT_OBJC_BRIDGING_HEADER -string "" ios/Runner.xcodeproj/project.pbxproj || echo "No setting found"
-          echo "✅ SWIFT_OBJC_BRIDGING_HEADER removed"
+          echo "=== Removing all SWIFT_OBJC_BRIDGING_HEADER references from project.pbxproj ==="
+          sed -i '' '/SWIFT_OBJC_BRIDGING_HEADER/d' ios/Runner.xcodeproj/project.pbxproj
+          echo "✅ All SWIFT_OBJC_BRIDGING_HEADER references removed"
+      
 
       # 🔟 Build iOS app for Simulator
       - name: Build iOS Simulator app
