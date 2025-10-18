@@ -24,15 +24,15 @@ jobs:
         run: flutter pub get
 
 
-      - name:  Clean and re-install Pods
+      - name: Clean and re-install Pods
         run: |
+          flutter clean
+          flutter pub get
           cd ios
-          rm -rf Pods Podfile.lock
-          pod deintegrate
-          pod install --repo-update
+          pod repo update
+          pod install
           cd ..
-      
-    
+
       - name: Build iOS app for simulator
         run: flutter build ios --simulator --no-codesign
 
