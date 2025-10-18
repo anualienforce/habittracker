@@ -47,7 +47,10 @@ post_install do |installer|
       # ❌ REMOVE THIS LINE
       # config.build_settings['SWIFT_VERSION'] = '5.7'
 
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '17.0'
+
       config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
 
       # ❌ TRY REMOVING THIS LINE. If the build fails later with an architecture error, you can add it back.
       # config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
