@@ -40,30 +40,38 @@ target 'Runner' do
 end
 
 post_install do |installer|
-  # This section applies settings to all the Pod targets (dependencies).
+  # --- Section 1: Apply settings to all Pod (dependency) targets ---
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
     target.build_configurations.each do |config|
-      # Fixes the "Using bridging headers with module interfaces is unsupported" error.
+      # Fixes the "bridging headers" error
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
-
-      # Silences warnings about Bitcode, which is deprecated by Apple.
+      # Silences Bitcode warnings
       config.build_settings['ENABLE_BITCODE'] = 'NO'
     end
   end
 
-  # This section applies the same settings to your main app target (Runner).
-  # It correctly accesses the project via the `aggregate_targets`.
+  # --- Section 2: Apply settings to the main App (Runner) target ---
   installer.aggregate_targets.each do |aggregate_target|
     aggregate_target.user_project.targets.each do |target|
       target.build_configurations.each do |config|
+        # Fixes the "bridging headers" error
         config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
+        # Silences Bitcode warnings
         config.build_settings['ENABLE_BITCODE'] = 'NO'
+
+        # --- THIS IS THE NEW, CRITICAL FIX ---
+        # It corrects the Library Search Paths to fix "Undefined symbol" linker errors.
+        # It ensures the project inherits the paths from CocoaPods.
+        config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = [
+            '$(inherited)',
+            '@executable_path/Frameworks',
+        ]
       end
     end
   end
 
-  # Specific workaround for IosAwnCore plugin if needed.
+  # --- Section 3: Specific workaround for IosAwnCore plugin (if needed) ---
   begin
     ios_aw_core_files = Dir["#{installer.sandbox.pod_dir('IosAwnCore')}/IosAwnCore/Classes/**/*.swift"]
     ios_aw_core_files.each do |file|
