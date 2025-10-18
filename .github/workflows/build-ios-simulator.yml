@@ -33,14 +33,6 @@ jobs:
       - name: Check Xcode version
         run: xcodebuild -version
 
-      # 5️⃣ Cache CocoaPods
-      - name: Cache CocoaPods
-        uses: actions/cache@v4
-        with:
-          path: ios/Pods
-          key: pods-${{ hashFiles('ios/Podfile.lock') }}
-          restore-keys: pods-
-
       # 6️⃣ Upgrade Flutter dependencies
       - name: Flutter pub get
         run: flutter pub get
