@@ -1,0 +1,6 @@
+# .gitignore
+
+# ... other ignores
+
+# Flutter-generated iOS files
+ios/Flutter/Generated.xcconfig
